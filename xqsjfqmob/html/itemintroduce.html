@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>分权--项目详情</title>
+	<meta name="author" content="Hifang.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+    <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+    <meta http-equiv="Pragma" CONTENT="no-cache">  
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+    <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>    
+</head>
+    
+<body>
+    <header class="header3">
+        <p class="h-top">项目详情</p>
+        <a href="" class="h-item-left icon-angle-left"></a>
+        <a href="" class="h-item-right  h-icon-th"></a>
+    </header>
+    <section class="bgf0">
+            <div>
+                <div class="clearfix mg-b10 h-container">
+                    <div class="h-grade-info clearfix">
+                        <ul class="h-itemintro-list">
+                            <li>
+                                <a href="#" class="h-thumb">
+                                    <img  data-src="holder.js/90x80/auto/sky" alt="90x80" data-holder-rendered="true">
+                                </a>
+                                <div class="list-r h-myhouse-list">
+                                    <h3 class="desc"><a href="#">鹿港小镇 别院A型</a></h3>
+                                    <p class="time mg-b20">￥56.8万/套</p>
+                                    <p class="pink2">￥5.68万/份</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix mg-t10 mg-b10 h-container">
+                    <div class="h-grade-info clearfix">
+                        <h3 class="nickname mg-l10">项目简介</h3>
+                        <p class="pd-10 grey6e tind">鹿岗小镇项目凭借着世界少有的原始森林的绝佳生态环境资源，和项目自身集度假、旅游、居住、休闲、商业于一体的多样配套，完美呈现出“新奇世界”所倡导的“全家新趣处”的资源禀赋与品牌主张...</p>
+                        <p class="pd-10 grey6e tind">寻得一处度假天堂在“鹿园”...</p>
+                        <p class="pd-10 grey6e tind">未来，在长白山无可比拟的原生态环境里，与家人置身于这片苍茫纯洁的白雪之境、远眺环绕四周的起伏山峦、近赏清澈的潺潺溪水，梅花鹿的悠然与家庭时光的悠闲相映成趣，醉身于长白山林海之中，寻得一处世外桃源...</p>
+                        <p class="pd-10 grey6e tind">承接长白山美境，鹿岗小镇比邻欧亚商都，傍依“人参大市场”，贯穿特色风景商业街，悦享顶级酒店，以国际级度假配套为依托，构建度假、旅游、居住、休闲、商业于一体的度假天堂。该项目距离天池景区40公里、长白山机场18公里、营松高速公路2公里。未来，凭借其独特的区位优势和旅游资源，将成为长白山旅游度假的新中心...</p>
+                        <p class="pd-10 grey6e tind">另外，鹿岗小镇首次联手新奇世界旅游度假平台，将推出开放式托管服务，处于未使用时段的房产可凭托管平台实现将其对外租赁服务，从而获得可观回报...</p>
+                    </div>
+                </div>
+            </div><!-- 第一个页面/ -->
+    </section>
+
+<!-- javascript -->
+<script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+<script src="../../thirdvendor/zepto1.0/touch.js"></script>
+
+<script>
+
+// JS实现选项卡切换
+window.onload = function() {
+    var tab = document.getElementById('tab').getElementsByTagName('li'),
+        panel = document.getElementById('panel').children,
+        i, j, len = tab.length,bindclick;
+        console.log(panel)
+    bindclick = function(i) {
+        tab[i].onclick = function() {
+            for (j = 0; j < len; j++) {
+                tab[j].className = tab[j].className.replace('active', '');
+                panel[j].style.display = 'none';
+            }
+            panel[i].style.display = 'block';
+            tab[i].className += 'active';
+        }
+    };
+    for (i = 0; i < len; i++) {
+        bindclick(i);
+    }
+}
+</script>
+
+
+
+</body>
+</html>

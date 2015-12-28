@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>资讯</title>
+        <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <!-- <link rel="stylesheet" href="../thirdvendor/bootstrap3.2/css/bootstrap.min.css"> -->
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>
+        <script src="../js/zepto.js"></script> 
+         <script src="../js/drag.js"></script> 
+
+    </head>
+    <body>
+        <header>
+            <div class="h-head h-resu-top1">
+               <div class="h-top">
+                    <a href="#" class="h-browse-left h-global">
+                        <span>全球 </span>
+                        <i class="icon-angle-down" id="h-recom-list"></i>
+                    </a>
+                    <div class="h-resu-r">
+                        <a href="" class="h-icon-th-large"></a>
+                       <a href="" class="h-icon-search2"></a>
+                   </div>
+                    <h1>资讯</h1>
+                    
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="h-navbox" id="h-navbox">
+                <div class="h-nav-sl" id="h-div" >
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html"  class="active">热点推荐</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">房式快讯</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">投资分析</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">房式快讯</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">投资分析</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">房式快讯</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">投资分析</a>
+                    </div>
+                    <div class="h-nav-a">
+                        <a href="resurcesecond.html">政策法规</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="h-resu-news1">
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+            </ul>
+            <div class="h-resu-investbox">
+                <h2>投资分析</h2>
+                <div class="h-resu-in-image1">
+                    <img src="../images/resu-image1_03A.png">
+                    <div class="h-resu-in-tittle">
+                        <h3>2015澳大利亚经济形势展形势展形势展形势展形势展望</h3>
+                    </div>
+                </div>
+                <div class="h-resu-in-list h-resu-line">
+                        2015澳大利亚经济形势展望
+                </div>
+                <div class="h-resu-in-list">
+                        2015澳大利亚经济形势展望
+                </div>
+            </div>
+            <div class="h-resu-investbox">
+                <h2>政策法规</h2>
+                <div class="h-resu-in-image1">
+                    <img src="../images/resu-image1_03A.png">
+                    <div class="h-resu-in-tittle">
+                        <h3>2015澳大利亚经济形势展望</h3>
+                    </div>
+                </div>
+                <div class="h-resu-in-list h-resu-line">
+                        2015澳大利亚经济形势展望
+                </div>
+                <div class="h-resu-in-list">
+                        2015澳大利亚经济形势展望经济形势展望经济形势展望
+                </div>
+            </div>
+
+         </section>
+    </body>
+    <script>
+window.onload=function(){
+
+    $('#h-div a').on('tap',function(){
+        window.location.href=$(this).attr('href')
+    });
+    hDrag('h-navbox','h-div')
+
+}
+</script>
+</html>

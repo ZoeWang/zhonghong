@@ -1,0 +1,71 @@
+/* Add here all your css styles (customizations) */
+/*cookie.html*/
+body{font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{color:#555;}
+h1, h2, h3, h4, h5, h6 {font-family:"Microsoft Yahei";}
+/*.dropdown > a:after {
+    content: "";
+    right: 15px;
+    top: 9px;
+}*/
+/*.dropdown > a:after, .header .dropdown-submenu > a:after {
+    content: "";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 11px;
+    font-weight: normal;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}*/
+.navbar-nav.leftMenu{background:url(../img/images/cat_icons.png) no-repeat 0 8px;}
+.navbar-nav.leftMenu li{clear:left !important;}
+.navbar-nav.leftMenu > li > a{margin: 15px 0 5px 40px;padding: 0 2px;color: #922;}
+.wrapper{background: #f5f4f2;}
+.horizontal{position:relative;}
+.name a{color: #922 !important;}
+.horizontal .action{background:#ccc7c2;padding:3px 10px;color:#FFF;position:absolute;right:10px;top:0;}
+.magazine-sb-categories{padding:20px;}
+.headline{margin-top:0;}
+.headline h2{font-size:14px;border:none;}
+.other{background:#e8e6e3;padding:20px;margin-bottom:2px;}
+.other .col-sm-3{padding:0 1px; width:15%;}
+.col-md-3.other{height:300px;}
+.da-slider{height:300px;}
+.bgfff{background:#FFF;margin-bottom:10px;}
+.row{margin:10px 0;}
+hr{margin:0;}
+.blog .blog-img {
+    margin-bottom:0 !important;
+}
+.team{margin-top:0;}
+.team .col-sm-3{background:#e8e6e3;padding:20px;}
+.team .col-sm-3 .thumbnail-style{background:#fff;}
+
+/******reset width*********/
+@media (min-width: 1280px) {
+    .container {
+        width:1280px
+    }
+}
+
+html, body, .wrapper{
+    height: 100%;
+}
+body > .wrapper {
+    height: auto;
+    min-height: 100%;
+    background: #fff;
+}
+.h-page{
+    padding-bottom:140px;
+    background: #fff;
+}
+.mt-10{
+    margin-top:-10px;
+}
+.pb100{
+    padding-bottom: 100px;
+}
+
+

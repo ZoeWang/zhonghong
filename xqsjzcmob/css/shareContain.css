@@ -1,0 +1,29 @@
+.share_contain{-webkit-box-sizing:border-box;font-family:arial;height:auto;width:100%;background:#fff;border-radius:6px 6px 0 0;position:fixed;bottom:0;z-index:1000002;display:none; border:1px solid #ccc;}
+.transEffect{opacity:.0001;-webkit-transition:all 2s ease-in-out;}
+.share_contain .closeBtn{position:absolute;top:-22px;right:-37px;display:inline-block;width:35px;height:35px;border-radius:17px;background:url("http://pages.ajkcdn.com/touch/img/global/7/propView_c_1.png") no-repeat center -1116px;background-size:18px;background-color:#FFF;z-index:1}
+.share_contain .title{position:relative;margin:8px 22px 0 22px;text-align:center}
+.share_contain .title span{font-size:14px;font-weight:bold;line-height:32px}
+.share_contain .jiathis_style_32x32{width:auto;max-width:470px;overflow:hidden;margin:0 auto; padding:0 10px;}
+.share_contain .jiathis_style_32x32 div{display:block;width:46px;height:69px;float:left;/*overflow:hidden;*/margin-left: 26px;text-align:center;padding:0px;}
+.share_contain .jiathis_style_32x32 .jtico{height:45px;height:45px!important;width:46px;width:46px!important;display:block;padding:0;margin:0 0 6px 0;line-height:45px;line-height:45px!important;padding:0;padding:0!important;background:0;background-position:0 0}
+.share_contain .jiathis_style_32x32 .jtico_renren{width:45px!important}
+.share_contain .jiathis_style_32x32 .copyBtn a.jtico{height:45px;height:45px!important;width:46px;width:46px!important;display:block;padding:0;margin:0 0 6px 0;line-height:45px;line-height:45px!important;padding:0;padding:0!important;background:0;background-position:0 0}
+.share_contain .jiathis_style_32x32 .jtico,.share_contain .jiathis_style_32x32 .copyBtn,#share_to_other i{background-image:url("http://pages.ajkcdn.com/touch/img/global/7/act_d_share.gif");background-size:296px}
+.share_contain .jiathis_style_32x32 .copyBtn,.jiathis_style_32x32 .copyBtn:visited{height:45px;width:45px;display:block;background-position:0 0;margin-bottom:6px}
+.share_contain .jiathis_style_32x32 .descr{width:80px;margin-left:-15px;height:12px;line-height:12px;font-size:12px;text-align:center;color:#666}
+.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico{background-position:-46px 0;width:45px!important}
+.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico{background-position:-91px 0}
+.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico{background-position:-137px 0}
+.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico{background-position:-183px 0}
+.share_contain .jiathis_style_32x32 .copyBtn:hover,.share_contain .jiathis_style_32x32 .copyBtn:active{background-position:0 -46px;opacity:1.0}
+.share_contain .jiathis_style_32x32 .descr,.jiathis_style_32x32 .descr:hover,.jiathis_style_32x32 .descr:active{background:0}
+.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico:active{background-position:-46px -46px;opacity:1.0}
+.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico:active{background-position:-92px -46px;opacity:1.0}
+.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico:active{background-position:-138px -46px;opacity:1.0}
+.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico:active{background-position:-184px -46px;opacity:1.0}#share_to_other i{float:left;height:16px;width:17px;background-position:-279px 0}
+.share_contain .jiathis_style_32x32 .nobg .jtico{width:48px!important;background:0;height:12px!important;line-height:12px!important;height:12px;line-height:12px;font-size:12px;text-align:center;margin-left:-1px;color:#666;}
+.share_contain .jiathis_style_32x32 .nobg .jtico:hover,.jiathis_style_32x32 .nobg .jtico:active{background:0}
+.share_contain .jiathis_style_32x32  .nobg{width:88px;float:left;height: 12px;line-height: 12px;font-size: 12px;text-align: center;color: #666;}
+.share_wrapper{font-size:14px;color:#000}#share_to_other span{float:left;line-height:16px;padding-left:2px}
+.share_block{width:59px;height:57px;position:absolute;top:0;right:0;background:transparent}
+.jiathis_button{width:100%; height:45px; border:1px solid #ccc; border-radius:4px;  outline:none; background:#015EAC; color:#fff;}

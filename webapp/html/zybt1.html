@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>智业宝投资</title>
+      <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+    </head>
+    <body>
+        <header class="h-zhead">
+            <div class="h-top">
+                <a href="#" class="h-browse-left">
+                    <i class="icon-angle-left" id="h-recom-list"></i>
+                </a>
+                <h1>智业宝</h1>
+            </div>
+            <p>让我们了解下您的需求吧，只需以下几步</p>
+        </header>
+        <section class="h-con h-zyb">
+        <form action="">
+            <h2>你想投哪个城市</h2>
+            <ul class="h-zyb-list">
+                <li class="h-zyb-list-pdl">
+                    <span class="h-list-lt">国家</span>
+                    <select class="h-zyb-sel" id="county">
+                        <option value="0"></option>
+                        <option value="1">中国</option>
+                        <option value="2">美国</option>
+                        <option value="3">加拿大</option>
+                    </select>
+                </li>
+                <li class="h-zyb-list-pdl">
+                    <span class="h-list-lt">州</span>
+                    <select class="h-zyb-sel" id="state">
+                        <option value="0"></option>
+                        <option value="1">亚洲</option>
+                        <option value="2">非洲</option>
+                        <option value="3">大洋洲</option>
+                    </select>
+                </li>
+                <li class="h-zyb-list-pdl">
+                    <span class="h-list-lt">城市</span>
+                    <select class="h-zyb-sel" id="city">
+                        <option value="0"></option>
+                        <option value="1">墨尔本</option>
+                        <option value="2">悉尼</option>
+                        <option value="3">堪培拉</option>
+                    </select>
+                </li>
+            </ul>
+            <input class="h-btngreen h-zybtn" type="submit" name="" value="下一步" />
+            <p class="h-hotcity">热门城市: <i id="hot1" data-county="3" data-state="2" data-city="2">悉尼</i> <i id="hot2" data-county="2" data-state="3" data-city="1">墨尔本</i> <i>堪培拉</i></p>
+        </form>
+        </section>
+
+        <script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+        <script src="../../thirdvendor/zepto1.0/touch.js"></script>
+        <script>
+        $(function(){
+            hotCity('#hot1');
+            hotCity('#hot2');
+        })
+        function hotCity(obj){
+            $(obj).on('tap',function(){
+                $('#county').val($(this).attr('data-county'));
+                $('#state').val($(this).attr('data-state'));
+                $('#city').val($(this).attr('data-city'));
+            })
+        }
+        </script>
+
+    </body>
+</html>

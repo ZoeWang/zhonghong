@@ -1,0 +1,60 @@
+/*****font-size******/
+.fs12{
+	font-size:12px;
+}
+.fs13(){
+	font-size:13px;
+}
+
+
+/************color****************/
+@white:#fff;
+@fsgrey:#757c83;
+
+
+
+/*******截取字符多余 ...*********/
+
+.textell(){
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/*******img路径******/
+@img: "../img";
+
+/*****show hide********/
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+/*********float************/
+.h-fl{
+	float:left;
+}
+.h-fr{
+	float:right;
+}
+/**********disabled**********/
+input[type="submit"][disabled]{
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+/**********提示**********/
+.errTip{
+	display:block;
+	color:#C26542;
+	font-size:12px;
+}
+.alert{
+	margin-top:10px;
+}
+/**********定义边框**********/
+.noborder{
+	border:none !important;
+}
+

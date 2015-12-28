@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>分权--流程</title>
+	<meta name="author" content="Hifang.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+    <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+    <meta http-equiv="Pragma" CONTENT="no-cache">  
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+    <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>    
+</head>
+    
+<body>
+    <header class="header">
+        <a href="#" class="logo">分权</a>
+        <nav class="h-nav clearfix">
+            <a href="#">
+                <i class="h-icon-user"></i><br/>
+                我的
+            </a>
+            <a  class="active" href="#">
+                <i class="h-icon-money"></i><br/>
+                分权
+            </a>
+            <a href="#">
+                <i class="h-icon-home"></i><br/>
+                众筹
+            </a>
+            
+        </nav>
+    </header>
+    
+    <section class="h-index">
+        <!-- tab -->
+        <ul class="tab-nav clearfix" id="tab">
+            <li><a href="javascript:;">分权首页</a></li>
+            <li><a href="javascript:;">分权项目</a></li>
+            <li class="active"><a href="javascript:;">分权流程</a></li>
+        </ul>
+        <!-- /tab -->
+        <ul class="h-flow">
+            <li>
+                <h1 class="tit"><i class="ol">1</i>创建账号</h1>
+                <p class="desc">拥有新奇世界平台通用账号，您就可以开启置业旅游投资之旅啦。</p>
+            </li>
+            <li>
+                <h1 class="tit"><i class="ol">2</i>了解项目</h1>
+                <p class="desc">新奇世界为您精选多层次、多品级的优惠项目，在认购开始之前有15天的展示期，我们会为您展示尽可能详细的信息供您了解项目详情，帮助您做出投资决策。</p>
+            </li>
+            <li>
+                <h1 class="tit"><i class="ol">3</i>参与认购</h1>
+                <p class="desc">当您决定投资，我们提供多种支付方式支持，直接在网上付款就可以认购您所需要的份额。</p>
+            </li>
+            <li>
+                <h1 class="tit"><i class="ol">4</i>达成目标</h1>
+                <p class="desc">当项目在认购周期内完成所有的份额，您就成功达成了投资目标。</p>
+            </li>
+        </ul>
+        
+        
+    </section>
+
+    <footer class="h-foot">
+        <div class="h-foot1">
+            <a href="#">登录</a> | <a href="#">注册</a>
+            <a href="#" class="h-foot2">关于我们</a>
+        </div>
+        <div class="h-foot3">
+            <p>
+                <a href="javascript:;">手机版</a> |
+                <a href="app.html">客户端</a> |
+                <a href="testhifang.fangfull.com">电脑版</a>
+            </p>
+            <p class="h-ICP">Copyright @2014...com 京ICP备05021087号</p>
+        </div>
+    </footer>
+
+<!-- javascript -->
+<script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+<script src="../../thirdvendor/zepto1.0/touch.js"></script>
+
+<script>
+
+// JS实现选项卡切换
+// window.onload = function() {
+//     var tab = document.getElementById('tab').getElementsByTagName('li'),
+//         panel = document.getElementById('panel').getElementsByTagName('li'),
+//         i, j, len = tab.length,bindclick;
+//     bindclick = function(i) {
+//         tab[i].onclick = function() {
+//             for (j = 0; j < len; j++) {
+//                 tab[j].className = tab[j].className.replace('active', '');
+//                 panel[j].style.display = 'none';
+//             }
+//             panel[i].style.display = 'block';
+//             tab[i].className += 'active';
+//         }
+//     };
+//     for (i = 0; i < len; i++) {
+//         bindclick(i);
+//     }
+// }
+</script>
+
+
+
+</body>
+</html>

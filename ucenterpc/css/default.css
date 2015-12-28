@@ -1,0 +1,2614 @@
+/*****font-size******/
+.fs12 {
+  font-size: 12px;
+}
+/*********background**********/
+/************color****************/
+.grey1 {
+  color: #929292;
+}
+.grey3 {
+  color: #757575;
+}
+.grey4 {
+  color: #484b4d;
+}
+.grey15 {
+  background: #ebebeb;
+}
+.orange {
+  color: #ff6600;
+}
+.green {
+  color: #1faf2d;
+}
+.red {
+  color: #ff6262;
+}
+.blue {
+  color: #0090ff;
+}
+/*******截取字符多余 ...*********/
+/*******img路径******/
+/*****show hide********/
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/*********float************/
+.h-fl {
+  float: left;
+}
+.h-fr {
+  float: right;
+}
+/**********disabled**********/
+input[type="submit"][disabled] {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+/*房源列表页 horselist*/
+.h-house-tab {
+  margin-top: 34px;
+}
+.tab-v1 .nav-tabs > .active > a,
+.tab-v1 .nav-tabs > .active > a:hover,
+.tab-v1 .nav-tabs > .active > a:focus {
+  background: #0090ff;
+}
+.tab-v1 .nav-tabs {
+  border-bottom: solid 2px #0090ff;
+}
+.tab-v1 .nav-tabs > li > a:hover {
+  background: #0090ff;
+}
+.tab-v1 .nav-tabs a {
+  padding: 5px 26px;
+  font-size: 17px;
+}
+.h-breadcrumb {
+  padding: 15px 0 21px;
+  margin: 0;
+  list-style: none;
+}
+.h-breadcrumb li {
+  color: #999999;
+  font-size: 14px;
+  display: inline-block;
+}
+.h-breadcrumb li a {
+  color: #999999;
+}
+.h-house-choose {
+  padding: 5px 20px;
+  border: 1px solid #e2e2e2;
+}
+.h-house-choose-dl {
+  height: auto;
+  border-bottom: 1px dashed #e2e2e2;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 75px 0 90px;
+  position: relative;
+}
+.h-house-choose-dt {
+  color: #969696;
+  height: 100%;
+  line-height: 40px;
+  position: absolute;
+  left: 0;
+}
+.h-house-choose-ul {
+  height: 100%;
+  line-height: 40px;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.h-house-choose-ul li {
+  display: inline-block;
+  margin-right: 40px;
+  color: #252525;
+}
+.h-house-choose-ul a:hover {
+  color: #0090ff;
+}
+.h-house-choose-more {
+  height: 100%;
+  line-height: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.h-house-choose-dl2 {
+  padding-right: 275px;
+}
+.h-house-choose-price {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  padding-top: 8px;
+}
+.h-house-choose-price span {
+  padding: 0 10px;
+  float: left;
+}
+.h-house-choose-price input {
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+  float: left;
+}
+.h-house-choose-price .h-house-choose-button {
+  background: #fcfcfc;
+  border: 1px solid #c2c2c2;
+  line-height: 16px;
+}
+.h-house-choose-hidden {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-top: 1px solid #F5F4F2;
+  margin-top: -1px;
+  text-align: center;
+  height: 25px;
+  cursor: pointer;
+  color: #53555a;
+}
+.h-house-choosed {
+  padding: 13px 20px;
+  border-bottom: 1px dashed #e2e2e2;
+}
+.h-house-choosed dl {
+  border: none;
+}
+.h-house-choosed-ul li {
+  border: 1px solid #e2e2e2;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 15px;
+  margin-right: 5px;
+}
+.h-house-choosed-ul li span {
+  color: #484b4d;
+}
+.h-icon-x {
+  margin-left: 10px;
+}
+.h-house-choose-clear {
+  height: 100%;
+  line-height: 40px;
+  float: right;
+  color: #0090ff;
+  cursor: pointer;
+}
+.h-house-list-one {
+  padding: 40px 0;
+  overflow: hidden;
+  border-bottom: 1px dashed #e2e2e2;
+}
+.h-house-list-one.h-house-list-bt {
+  border-top: 1px dashed #e2e2e2;
+}
+.h-house-list-ul {
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.h-house-list-ul h4 a {
+  font-size: 20px;
+  color: #000000;
+}
+.h-house-list-p {
+  font-size: 12px;
+}
+.h-house-list-icon li {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% !important;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  color: #828282;
+}
+.h-house-list-icon li:first-child {
+  margin-right: 10px;
+}
+.h-house-list-icon .h-heart-red,
+.h-house-list-icon li:hover {
+  color: #ff6262;
+  border: 1px solid #ff6262;
+}
+.h-house-list-money {
+  font-size: 24px;
+  margin-right: 18px;
+  color: #ff6600;
+}
+.h-house-btn button {
+  float: right;
+  padding: 8px 50px;
+}
+@media (max-width: 992px) {
+  .h-house-btn button {
+    padding: 8px 10px;
+  }
+}
+/*房源列表页 horselist  End */
+/*page*/
+.text-center .h-house-page li a {
+  margin-right: 5px;
+  padding: 5px 12px;
+  color: #0090ff;
+}
+.text-center .h-house-page li a:hover {
+  color: #0090ff;
+  background: #fcfcfc;
+  border: 1px solid #ddd;
+}
+.text-center .h-house-page .active {
+  color: #ffffff;
+  background: #0090ff;
+  float: left;
+  margin-right: 10px;
+  line-height: 30px;
+  padding: 0 12px;
+  border: 1px solid #0090ff;
+}
+.text-center .h-house-page .h-page-all {
+  float: left;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.text-center .h-house-page .h-pag-grey {
+  border: 1px solid #ccc;
+  float: left;
+  line-height: 30px;
+  margin-right: 10px;
+  padding: 0 12px;
+  background: #ffffff;
+  color: #969696;
+}
+.h-house-choose-height {
+  height: 40px;
+  overflow: hidden;
+}
+/**********index**********/
+.h-banner {
+  width: 100%;
+  position: relative;
+}
+.h-ban {
+  width: 100%;
+  background: url("http://hifang.local.com/main/resource/frontend/img/bg/ban1.png") top center no-repeat;
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 640px) {
+  .h-banbox {
+    width: 640px;
+  }
+}
+@media (min-width: 992px) {
+  .h-banbox {
+    width: 992px;
+  }
+}
+@media (min-width: 1280px) {
+  .h-banbox {
+    width: 1280px;
+  }
+}
+@media (max-width: 1200px) {
+  .h-bantip {
+    display: none;
+  }
+}
+.h-banbox {
+  min-height: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.h-banbox .h-formboxbg {
+  width: 60%;
+  height: 124px;
+  background: #fff;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: relative;
+  margin: -124px auto 0;
+}
+.h-banbox .h-formbox {
+  width: 60%;
+  opacity: 1;
+  margin: 0 auto 0;
+  padding: 10px 26px 16px;
+  position: relative;
+  z-index: 3;
+}
+.h-banbox .h-formbox h2 {
+  font-size: 18px;
+  color: #3c3c3c;
+  font-weight: 700;
+}
+.h-banbox .h-formbox .h-input {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+}
+.h-banbox .h-formbox .btn-u {
+  height: 50px;
+}
+.h-banbox .h-formbox .btn-u i {
+  display: block;
+  font-size: 30px;
+}
+.h-banbox .h-countybg {
+  width: 60%;
+  height: 50px;
+  background: #000;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  position: relative;
+  margin: 0 auto;
+  top: -50px;
+}
+.h-banbox .h-county {
+  width: 60%;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+.h-banbox .h-county dt {
+  font-weight: normal;
+  color: #929292;
+  margin-right: 30px;
+  margin-left: 28px;
+}
+.h-banbox .h-county dd {
+  margin-right: 20px;
+}
+.h-banbox .h-county dd a {
+  color: #c6c2bf;
+}
+.h-banbox .h-county dt,
+.h-banbox .h-county dd {
+  float: left;
+  line-height: 50px;
+}
+.h-banbox .h-bantip {
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+.h-banbox .h-bantip .h-tip1 {
+  font-size: 24px;
+  color: #0090ff;
+  margin-left: 127px;
+  margin-right: 42px;
+}
+.h-banbox .h-bantip .h-tip2 {
+  color: #757c83;
+}
+.h-banbox .h-bantip .h-tip3 {
+  color: #929292;
+}
+.h-banbox .h-bantip .btn-u-blue {
+  font-size: 16px;
+  width: 152px;
+  height: 39px;
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 140px;
+}
+.h-bantipbg {
+  width: 100%;
+  height: 60px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  background: #000000;
+  position: absolute;
+  margin-top: -60px;
+  z-index: 2;
+}
+.h-service {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 15px 55px 10px;
+}
+.h-service .h-roundimg {
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+.h-service .h-roundimg img {
+  display: block;
+  border: none;
+}
+.h-service .h-desc {
+  padding: 0 15px;
+  overflow: hidden;
+}
+.h-service h4 {
+  font-size: 22px;
+  line-height: 25px;
+}
+.h-app {
+  background: #5ebe54 url("http://hifang.local.com/main/resource/frontend/img/bg/indexGreen.png") top center no-repeat;
+  width: 100%;
+  height: 587px;
+}
+.h-app .h-native {
+  padding: 50px 0 0 70px;
+}
+.h-app .h-native h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+.h-app .h-native .tip {
+  font-size: 18px;
+  color: #ffffff;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  padding-bottom: 70px;
+}
+.h-app a:hover {
+  text-decoration: none;
+}
+.h-app .android {
+  color: #ff6600;
+}
+.h-app .apple {
+  color: #00a2ff;
+}
+.h-app .android,
+.h-app .apple {
+  display: block;
+  width: 302px;
+  padding: 0 66px 0 36px;
+  height: 62px;
+  line-height: 55px;
+  background: #ffffff;
+  border-radius: 5px !important;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.h-app .android i,
+.h-app .apple i {
+  display: inline-block;
+  font-style: normal;
+}
+.h-app .android .fa,
+.h-app .apple .fa {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+}
+.h-app .android .h-bar,
+.h-app .apple .h-bar {
+  font-size: 28px;
+  padding: 0 32px 0 38px;
+}
+.h-app .h-appimg {
+  position: absolute;
+  margin-top: 35px;
+  right: 80px;
+}
+.h-app .h-appimg img {
+  border: none;
+}
+.h-app .greybg {
+  margin: 0;
+  width: 100%;
+  height: 120px;
+  background: #53555a;
+}
+/**********end index**********/
+/*房源详情页 housedetails*/
+.h-detail-left {
+  padding: 0;
+}
+.h-detail-bigimg {
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  position: relative;
+}
+.h-detail-imgbox {
+  overflow: hidden;
+}
+.h-detail-bigbigimg {
+  width: 600px;
+  height: 521px;
+  min-height: 300px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+}
+.h-detail-bigbigimg img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.h-detail-smallimg {
+  min-height: 320px;
+  height: 420px;
+  overflow: hidden;
+  padding-right: 0;
+}
+.h-detail-ulbox {
+  min-height: 300px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.h-detail-moveul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  transition: all .6s ease;
+}
+.h-detail-moveul li {
+  width: 100%;
+  padding: 3px 0;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.h-detail-moveul .active {
+  opacity: 1;
+}
+.h-detail-down,
+.h-detail-up {
+  height: 24px;
+  background: #e2e2e2;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: #929292;
+  line-height: 24px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.h-detail-infor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  color: #ffffff;
+  width: 100%;
+}
+.h-detail-infor .h-detail-left {
+  float: left;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.h-detail-infor .h-detail-right {
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.h-detail-infor .h-detail-right i {
+  font-size: 17px;
+}
+.h-detail-introdoce {
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+.h-detail-introdoce .h-house-list-ul {
+  padding: 0;
+  margin: 0;
+}
+.h-detail-introdoce .h-house-list-ul > li {
+  padding: 0;
+}
+.h-detail-introdoce .margin-bottom-10 span {
+  color: #757c83;
+  font-size: 15px;
+  margin-right: 40px;
+}
+.h-detail-introdoce .h-house-btn {
+  height: 60px;
+  background: #f0f0f0;
+  line-height: 60px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
+.h-detail-introdoce .h-house-btn .h-house-list-money {
+  font-size: 27px;
+  color: #e40402;
+  font-weight: bold;
+}
+.h-detail-introdoce .h-house-btn .h-details-usd {
+  font-size: 16px;
+}
+.h-detail-introdoce .h-details-btn {
+  background: none;
+  margin: 0;
+}
+.h-detail-introduction {
+  clear: both;
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  background: #fcfcfc;
+}
+.h-detail-introduction .h-detail-h3 {
+  font-size: 20px;
+  color: #53555a;
+  border-bottom: 1px dashed #cccccc;
+  height: 40px;
+  margin-top: 0;
+}
+.h-detail-introduction p {
+  color: #000000;
+}
+.h-detail-information,
+.h-detail-information2 {
+  margin-top: 30px;
+}
+.h-detail-infor-h4 {
+  color: #0a7ad4;
+}
+.h-detail-infor-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 12px;
+  overflow: hidden;
+}
+.h-detail-infor-ul li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dashed #484b4d;
+  height: 38px;
+  line-height: 38px;
+}
+.h-detail-infor-dl {
+  font-size: 14px;
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+.h-detail-infor-dl > dt {
+  color: #000000;
+  height: 26px;
+  font-size: 15px;
+}
+.h-detail-infor-dl > dd {
+  color: #53555a;
+  margin-bottom: 10px;
+}
+.h-detail-infor-dlsmall {
+  display: inline-block;
+  margin: 0 47px 0px 0;
+}
+.h-detail-infor-dlsmall dt,
+.h-detail-infor-dlsmall dd {
+  display: inline-block;
+  color: #53555a;
+  font-weight: normal;
+}
+.h-detail-infor-dlsmall2 {
+  margin: 0;
+}
+.h-detail-infor-dlsmall2 dt,
+.h-detail-infor-dlsmall2 dd {
+  display: inline-block;
+  font-weight: normal;
+}
+.h-detail-consult {
+  width: 96%;
+  padding: 0 25px 30px;
+  float: right;
+  border: 1px solid #cccccc;
+  border-top: 4px solid #0090ff;
+}
+.h-detail-consult h2 {
+  font-size: 36px;
+  text-align: center;
+  height: 96px;
+  line-height: 96px;
+  margin-bottom: 30px;
+  background: url("http://hifang.local.com/main/resource/frontend/img/bgtree.png") 0 1px no-repeat;
+  border-bottom: 1px solid #d5d5d5;
+}
+.h-detail-consult p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.h-detail-consult .h-detail-telnum {
+  height: 54px;
+  line-height: 54px;
+  font-size: 26px;
+  color: #ffffff;
+  background: #1faf2d;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0;
+}
+.h-detail-consult .h-detail-telnum i {
+  padding-right: 15px;
+  font-size: 30px;
+}
+.h-detail-consult .h-detail-telform input {
+  display: block;
+  border: 1px solid #929292;
+  outline: none;
+  width: 100%;
+  height: 43px;
+  margin-top: 9px;
+  padding: 5px;
+}
+.h-detail-consult .h-detail-telform .h-detail-telform-sub {
+  margin-top: 27px;
+  background: #dff4e0;
+  border: 1px solid #19bc66;
+  color: #1faf2d;
+  font-size: 16px;
+}
+.h-detail-hot {
+  clear: both;
+  padding: 20px;
+}
+.h-detail-hot h3 {
+  border-bottom: 1px solid #d5d5d5;
+  height: 36px;
+  color: #000000;
+}
+.h-detail-hot h3 span {
+  border-bottom: 1px solid #0a7ad4;
+  float: left;
+  margin-bottom: -8px;
+  padding: 0 0 8px;
+}
+.h-detail-hot h3 .h-detail-hot-more {
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  border: none;
+}
+.h-detail-hot .h-detail-hot-ul {
+  list-style: none;
+  padding: 0;
+}
+.h-detail-hot .h-detail-hot-ul li {
+  clear: both;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.h-detail-hot .h-detail-hot-ul i {
+  float: left;
+  height: 30px;
+  line-height: 18px;
+  padding-right: 10px;
+  color: #0a7ad4;
+}
+.h-detail-hot .h-detail-hot-ul a {
+  height: 24px;
+  line-height: 24px;
+}
+.h-detail-hot .h-detail-hot-ul a:hover {
+  color: #0a7ad4;
+}
+.h-detail-hot .h-house-list-one {
+  padding: 15px 0;
+}
+.h-detail-hot .h-house-list-one .h-detail-one-img {
+  padding: 0;
+}
+.h-detail-hot .h-house-list-one h3 {
+  border: none;
+  font-size: 16px;
+  margin: 0;
+  height: 24px;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.h-detail-hot .h-house-list-one .h-house-list-money {
+  font-size: 17px;
+}
+.h-detail-consult2 {
+  clear: both;
+  border: 1px solid #cccccc;
+  border-left: 4px solid #0090ff;
+  padding: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+.h-detail-consult2 .h-detail-dian {
+  width: 8px;
+  height: 6px;
+  border-bottom-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  background: #ffffff;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  position: absolute;
+  border-top: 0;
+  left: 56px;
+  top: -1px;
+}
+.h-detail-consult2 .h-detail-dian2 {
+  left: 50%;
+  margin-left: 26px;
+}
+.h-detail-consult2 .h-detail-dian3 {
+  left: 50%;
+  margin-left: 26px;
+  top: 229px;
+  border: 1px solid #cccccc;
+  border-bottom: 0;
+  border-top-right-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+}
+.h-detail-consult2 .h-detail-dian4 {
+  left: 30px;
+  margin-left: 26px;
+  top: 229px;
+  border: 1px solid #cccccc;
+  border-bottom: 0;
+  border-top-right-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+}
+.h-detail-consult2 h2 {
+  text-align: center;
+  float: left;
+  width: 60px;
+  height: auto;
+  margin: 0;
+  padding: 57px 10px;
+  font-size: 28px;
+  line-height: 30px;
+  display: inline-block;
+  background: #e2e2e2;
+  border: none;
+}
+.h-detail-consult2 p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.h-detail-consult2 .h-detail-telnum-wrap {
+  overflow: hidden;
+}
+.h-detail-consult2 .h-detail-telnum {
+  height: 54px;
+  line-height: 54px;
+  font-size: 26px;
+  color: #ffffff;
+  background: #1faf2d;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0;
+}
+.h-detail-consult2 .h-detail-telnum i {
+  padding-right: 15px;
+  font-size: 30px;
+}
+.h-detail-consult2 .h-detail-telnum-box {
+  float: left;
+  width: 50%;
+  padding: 20px 30px 10px;
+  background: #fafafa;
+  height: 234px;
+  border-left: 1px dashed #c2c2c2;
+}
+.h-detail-consult2 .h-detail-telnum-boxp1 {
+  padding: 50px 0 10px;
+  font-size: 16px;
+}
+.h-detail-consult2 .h-detail-telform {
+  padding: 0 10px;
+}
+.h-detail-consult2 .h-detail-telform .h-detail-telform-sub {
+  margin-top: 12px;
+  background: #dff4e0;
+  border: 1px solid #19bc66;
+  color: #1faf2d;
+  font-size: 16px;
+}
+.h-detail-consult2 .h-detail-telform input {
+  display: block;
+  border: 1px solid #929292;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+  margin-bottom: 9px;
+}
+@media (min-width: 1400px) {
+  .h-detail-ulbox {
+    min-height: 470px;
+  }
+  .h-detail-smallimg {
+    min-height: 520px;
+  }
+  .h-detail-bigbigimg {
+    min-height: 600px;
+  }
+}
+/************search result*************/
+#h-search .col-sm-4 {
+  padding-left: 0;
+}
+#h-search .col-sm-8 {
+  padding-right: 0;
+}
+.h-search-res {
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #e2e2e2;
+}
+.h-search-res .key {
+  font-size: 18px;
+}
+.h-search-res .key a {
+  color: #0090ff;
+}
+#h-search .h-search-hothouse .col-sm-4:first-child {
+  padding-left: 0;
+  padding-right: 60px;
+}
+#h-search .h-search-hothouse .col-sm-4:nth-child(2) {
+  padding: 0 30px;
+}
+#h-search .h-search-hothouse .col-sm-4:last-child {
+  padding-right: 0;
+  padding-left: 60px;
+}
+.h-search-hothouse {
+  padding: 28px 0;
+}
+.h-search-hothouse .h-intro {
+  width: 100%;
+}
+.h-search-hothouse .h-intro .h-fl {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5%;
+}
+.h-search-hothouse .h-intro .h-fr {
+  width: 35%;
+  text-align: right;
+}
+.h-search-hothouse .h-intro .h-fr .red {
+  font-weight: 700;
+}
+/************end search result*********/
+/***************news***************/
+.h-news .h-news-list,
+.h-news .h-news-con {
+  padding-left: 0;
+  padding-right: 40px;
+}
+.h-news .h-news-sidebar {
+  padding: 0;
+}
+.h-news-list h1 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.h-news-list h1.mt-10 {
+  margin-top: -10px;
+}
+.h-news-list h2 {
+  font-size: 20px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.h-news-list h2 a:hover {
+  text-decoration: none;
+}
+.h-news-list .roundblue {
+  color: #0090ff;
+  font-style: normal;
+}
+.h-news-list .h-box {
+  width: 100%;
+}
+.h-news-list .h-box li {
+  border-bottom: 1px dashed #b2b2b2;
+  padding: 30px 0;
+}
+.h-news-list .h-box .h-img {
+  padding-left: 0;
+  border: none;
+}
+.h-news-list .h-box .h-intro {
+  padding-right: 0;
+}
+.h-news-list .h-box .h-intro .more {
+  color: #000;
+  position: absolute;
+  right: 0;
+}
+.h-news-list .h-box .h-intro .more .fa {
+  border: 1px solid #aaa;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 12px;
+  color: #aaa;
+}
+.h-news-sidebar .input-group {
+  margin-top: 35px;
+}
+.h-news-sidebar .form-control {
+  border-radius: 0;
+  border-color: #1faf2d;
+}
+.h-news-sidebar .btn-u {
+  background: #1faf2d;
+  padding: 6px 20px;
+}
+.h-news-sidebar h3 {
+  font-size: 20px;
+  border-bottom: 1px solid #dadada;
+  margin-top: 15px;
+}
+.h-news-sidebar h3 span {
+  display: inline-block;
+  padding: 15px 10px 15px 0;
+  border-bottom: 1px solid #0090ff;
+  margin-bottom: -1px;
+}
+.h-news-sidebar .h-choose,
+.h-news-sidebar .h-hotnews {
+  margin-top: 20px;
+}
+.h-news-sidebar .h-choose dd:last-child {
+  border-bottom: none;
+}
+.h-news-sidebar .h-choose dt,
+.h-news-sidebar .h-choose dd {
+  font-weight: normal;
+  border-bottom: 1px dotted #c5c5c5;
+  line-height: 35px;
+}
+.h-news-sidebar .h-choose dt a,
+.h-news-sidebar .h-choose dd a {
+  display: block;
+}
+.h-news-sidebar .h-choose dt.active,
+.h-news-sidebar .h-choose dd.active {
+  border-color: #72c02c;
+}
+.h-news-sidebar .h-choose dt.active a,
+.h-news-sidebar .h-choose dd.active a {
+  color: #72c02c;
+}
+.h-news-sidebar .h-choose dt a:hover,
+.h-news-sidebar .h-choose dd a:hover {
+  text-decoration: none;
+}
+.h-news-sidebar .h-hotnews li {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.h-news-sidebar .h-hotnews li a:hover {
+  text-decoration: none;
+}
+.h-news-sidebar .h-hotnews .square {
+  color: #0090ff;
+  margin-right: 10px;
+}
+.h-news-con {
+  padding-bottom: 200px;
+}
+.h-news-con .h-share {
+  margin-top: -40px;
+  line-height: 30px;
+}
+.h-news-con h1 {
+  font-size: 24px;
+}
+.h-news-con .tag {
+  padding: 20px 0;
+  color: #929292;
+}
+.h-news-con .tag a {
+  color: #0090ff;
+}
+.h-news-con .article {
+  font-size: 16px;
+}
+.h-news-con .article h4 {
+  font-weight: 700;
+  margin-top: 25px;
+}
+.h-news-con .article img {
+  border: none;
+}
+/***************end news***********/
+/***************投资 invest ***************/
+.h-invest-one {
+  position: relative;
+}
+.h-invest-one .h-invest-one-country {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  margin-left: -130px;
+}
+.h-invest-one .h-invest-one-h2 {
+  display: inline-block;
+  background: #0090ff;
+  padding: 25px 52px;
+  color: #fff;
+  font-size: 38px;
+  margin: 0;
+}
+.h-invest-one .h-invest-one-span {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 14px solid #01456f;
+  position: absolute;
+  right: -10px;
+  top: -9px;
+}
+.h-invest-two {
+  overflow: hidden;
+  position: relative;
+  background: #f3f3f3;
+}
+.h-invest-two .h-invest-two-h3 {
+  font-size: 17px;
+  border-bottom: 2px solid #0090ff;
+  padding: 6px 15px;
+  margin: 0 -15px;
+  background: #ffffff;
+}
+.h-invest-two .h-triangle-box {
+  position: absolute;
+  left: 43px;
+  top: 13px;
+}
+.h-invest-two .h-triangle-box .h-triangle {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #0090ff;
+}
+.h-invest-two .h-triangle-box .h-invest-triangle {
+  position: relative;
+  left: -12px;
+  top: 3px;
+  border-bottom: 6px solid #f3f3f3;
+}
+.h-invest-two .h-triangle-box .h-invest-triangle2 {
+  border-bottom: 6px solid #19bc66;
+}
+.h-invest-two .h-triangle-box .h-invest-triangle3 {
+  border-bottom: 6px solid #e3ab2d;
+}
+.h-invest-two .h-invest-two1-dlbox {
+  padding: 10px;
+}
+.h-invest-two .h-invest-two1-dl {
+  position: relative;
+  padding-left: 90px;
+  margin: 4px 0;
+}
+.h-invest-two .h-invest-two1-dl dt {
+  width: 90px;
+  position: absolute;
+  left: 0;
+  font-weight: normal;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.h-invest-two .h-invest-two2 .h-invest-two-h3 {
+  border-bottom: 2px solid #19bc66;
+}
+.h-invest-two .h-invest-two3 .h-invest-two-h3 {
+  border-bottom: 2px solid #e3ab2d;
+}
+.h-invest-three {
+  overflow: hidden;
+}
+.h-invest-three-h3-green .h-invest-three-span1 {
+  color: #0a9303 !important;
+  border-bottom: 1px solid #0a9303 !important;
+}
+.h-invest-two1-pbox {
+  overflow: hidden;
+  padding: 10px;
+}
+.h-invest-two1-pbox .h-invest-two1-div1 {
+  display: none;
+}
+.h-invest-two1-pbox .h-invest-three-p2 {
+  line-height: 26px;
+  color: #404040;
+  text-indent: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.h-invest-two1-pbox .h-invest-three-more {
+  float: right;
+  color: #63ab77;
+}
+.h-invest-two1-pbox .hInvestActive {
+  display: block;
+}
+.h-invest-tabp1 {
+  line-height: 24px;
+  color: #757575;
+  margin-bottom: 5px;
+  text-indent: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.h-invest-three-more {
+  float: right;
+  color: #63ab77;
+}
+.h-invest-three-box {
+  margin: 0 -15px;
+}
+/*粉色tab*/
+.h-tab-colorpink > .nav-tabs > .active > a,
+.h-tab-colorpink.tab-v1 .nav-tabs > .active > a:hover,
+.h-tab-colorpink.tab-v1 .nav-tabs > .active > a:focus {
+  background: #ff6e6e;
+}
+.h-tab-colorpink .nav-tabs {
+  border-bottom: solid 2px #ff6e6e;
+}
+.h-tab-colorpink .nav-tabs > li > a:hover {
+  background: #ff6e6e;
+}
+/*绿色tab*/
+.h-tab-colorgreen2 > .nav-tabs > .active > a,
+.h-tab-colorgreen2.tab-v1 .nav-tabs > .active > a:hover,
+.h-tab-colorgreen2.tab-v1 .nav-tabs > .active > a:focus {
+  background: #3dad9d;
+}
+.h-tab-colorgreen2 .nav-tabs {
+  border-bottom: solid 2px  #3dad9d;
+}
+.h-tab-colorgreen2 .nav-tabs > li > a:hover {
+  background: #3dad9d;
+}
+.h-invest-three-div1 .h-invest-three-p1 {
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  font-size: 18px;
+  color: #ffffff;
+  height: 36px;
+  line-height: 36px;
+  margin: -36px 0 0 0;
+  padding: 0 15px;
+}
+.h-invest-three-div1 .h-invest-three-p2 {
+  height: 88px;
+  color: #757575;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.h-invest-three-div1 .h-invest-three-more {
+  float: right;
+  color: #63ab77;
+}
+.h-invest-two1-bg {
+  background: #f4f4f4;
+  padding: 20px;
+}
+.h-invest-three-h3 {
+  border-bottom: 1px solid #d5d5d5;
+  font-size: 18px;
+  height: 36px;
+}
+.h-invest-three-h3 .h-invest-three-span1 {
+  color: #0090ff;
+  font-weight: bold;
+  border-bottom: 1px solid #0090ff;
+  float: left;
+  margin-bottom: -8px;
+  padding: 0 25px 8px 0;
+}
+.h-invest-three-h3 .h-invest-three-more2 {
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  border: none;
+}
+.h-invest-three-h3-pink .h-invest-three-span1 {
+  color: #b56bce !important;
+  border-bottom: 1px solid #b56bce !important;
+}
+.h-invest-three-h3-orange .h-invest-three-span1 {
+  color: #ff6600 !important;
+  border-bottom: 1px solid #ff6600 !important;
+}
+.h-invest-three-h3-pink3 .h-invest-three-span1 {
+  color: #6d82ff !important;
+  border-bottom: 1px solid #6d82ff !important;
+}
+.h-invest-three-h3-green2 .h-invest-three-span1 {
+  color: #34ad9d !important;
+  border-bottom: 1px solid  #34ad9d !important;
+}
+.h-invest-fivebox {
+  position: relative;
+  padding: 0 280px;
+  height: 200px;
+}
+.h-invest-fivebox ul {
+  position: absolute;
+  width: 280px;
+  top: 0;
+  list-style: none;
+  padding: 0;
+}
+.h-invest-fivebox .h-invest-three-ul1 {
+  left: 0;
+}
+.h-invest-fivebox .h-invest-three-ul2 {
+  right: 0;
+}
+.h-invest-fivebox li {
+  height: 40px;
+  background: #f0f0f0;
+  line-height: 40px;
+  padding-left: 25px;
+  border-bottom: 1px solid #d6d6d6;
+  cursor: pointer;
+}
+.h-invest-fivebox li .h-invest-threespan {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 8px solid #f0f0f0;
+  border-bottom: 7px solid transparent;
+  float: right;
+  margin-top: 12px;
+}
+.h-invest-fivebox li .h-invest-threespan2 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 8px solid #f0f0f0;
+  border-bottom: 7px solid transparent;
+  float: left;
+  margin-top: 12px;
+  margin-left: -25px;
+}
+.h-invest-fivebox .h-bordernone {
+  border: none;
+}
+.h-invest-fivebox .h-invest-three-divbox {
+  border-bottom: 2px solid #b56bce;
+  height: 100%;
+  padding: 25px;
+  overflow: hidden;
+  background: #fbf9f9;
+}
+.h-invest-fivebox .h-invest-three-div1 {
+  height: 100%;
+  display: none;
+}
+.h-invest-fivebox .hActivediv {
+  display: block;
+}
+.h-invest-fivebox .hActiveli {
+  background: #b56bce;
+  color: #ffffff;
+}
+.h-invest-six {
+  overflow: hidden;
+}
+.h-invest-six-box > div {
+  background: #f8f8f8;
+  padding: 20px;
+}
+.h-invest-six-box > div h4 {
+  color: #ff6600;
+}
+.h-invest-six-box > div .h-invest-three-p2 {
+  line-height: 26px;
+  color: #404040;
+  text-indent: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.h-invest-seven {
+  padding-bottom: 40px;
+}
+.h-invest-seven h2 {
+  padding: 30px;
+}
+.h-invest-eight .h-invest-three-div1 {
+  margin: 20px 0;
+}
+.h-invest-eight .h-invest-eightdivbox-div1 {
+  display: none;
+}
+.h-invest-eight .hInvestActive {
+  display: block;
+}
+/***************投资 invest End***************/
+/***************投资列表页 invest ***************/
+.h-invest2-one {
+  border: 1px solid #b2b2b2;
+  overflow: hidden;
+  margin: 18px 0;
+}
+.h-invest2-one .h-invest2-ulwrap {
+  width: 100%;
+  height: 128px;
+  overflow: hidden;
+  padding: 22px 40px;
+  background: #252525;
+  position: relative;
+}
+.h-invest2-one .h-invest2-ulwrap ul {
+  list-style: none;
+  height: 84px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.h-invest2-one .h-invest2-ulwrap li {
+  list-style: none;
+  width: 137px;
+  float: left;
+  padding: 0 10px;
+}
+.h-invest2-one .h-invest2-ulwrap .fa {
+  color: #8f8f8f;
+  position: absolute;
+  font-size: 26px;
+  top: 0;
+  height: 100%;
+  line-height: 130px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.h-invest2-one .h-invest2-ulwrap .fa:hover {
+  color: #fff;
+}
+.h-invest2-one .h-invest2-ulwrap .fa-chevron-left {
+  left: 0;
+}
+.h-invest2-one .h-invest2-ulwrap .fa-chevron-right {
+  right: 0;
+}
+.h-leftlist {
+  background: #f2f1f1;
+  border-right: 1px solid #b2b2b2;
+}
+.h-leftlist .list-toggle:after {
+  content: '';
+}
+.h-leftlist ul {
+  margin: 0;
+}
+.h-leftlist .list-group > li {
+  background: #f2f1f1;
+  border: none;
+  border-bottom: 1px dashed #b2b2b2;
+  margin-bottom: 0px;
+  line-height: 42px;
+  text-align: center;
+}
+.h-leftlist .list-group > li ul a {
+  border: none;
+  background: #f2f1f1;
+  line-height: 34px;
+  margin: 0 -15px;
+  text-align: left;
+  padding-left: 50%;
+}
+.h-leftlist .list-group > li .active {
+  background: #ffffff;
+  border-left: 2px solid #0075ea;
+  margin: 0 -16px 0 -15px;
+  background: #fff;
+  color: #0075ea;
+  line-height: 46px;
+  text-align: left;
+  padding-left: 50%;
+}
+.h-leftlist .list-group > li > a {
+  margin: 0 -15px;
+}
+.h-leftlist .list-group > li a:hover {
+  background: #f7f7f7;
+  color: #252525;
+}
+.h-invest2-spanbox {
+  padding: 0;
+}
+.h-invest2-btn {
+  float: right;
+}
+.h-invest2-btn button {
+  width: 150px;
+  height: 40px;
+}
+/***************投资列表页 invest End***************/
+/*个人中心 person*/
+.h-zyb .h-zyb-tab .nav-bottom .h-person-tabul {
+  padding-left: 195px;
+}
+.h-header-text {
+  font-size: 16px;
+  color: #ffffff;
+  display: inline-block;
+  height: 73px;
+  line-height: 73px;
+  margin-left: 10px;
+}
+.h-person-imgbg {
+  height: 180px;
+  background: url("http://hifang.local.com/main/resource/frontend/img/personbg.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.h-person-imgbox {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50% !important;
+  border: 2px solid #ffffff;
+  float: left;
+  margin: 45px 0 0 20px;
+}
+.h-person-imgwrap {
+  position: relative;
+}
+.h-person-information {
+  padding-left: 20px;
+  height: 180px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.h-person-information h3 {
+  font-size: 22px;
+  color: #000000;
+}
+.h-person-information h3 .h-person-jifenchange {
+  float: right;
+  padding: 0 10px;
+  line-height: 24px;
+  position: absolute;
+  right: 0;
+}
+.h-person-information h3 .h-person-jifenchange i {
+  padding-right: 10px;
+  font-size: 11px;
+}
+.h-person-information .h-person-ston span {
+  width: 25px;
+  height: 12px;
+  display: inline-block;
+  background: url("http://hifang.local.com/main/resource/frontend/img/h-pensor-ston.png") 0 0 no-repeat;
+}
+.h-person-information .h-person-jifen {
+  display: inline-block;
+  margin-right: 20px;
+}
+.h-person-information .h-person-jifenchange {
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0 7px;
+  display: inline-block;
+  border: 1px solid #757575;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.h-person-left {
+  border: none;
+  width: 170px;
+  margin-top: 20px;
+}
+.h-person-left li {
+  height: 42px;
+  line-height: 42px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+}
+.h-person-left .h-person-noborder {
+  border: none;
+}
+.h-person-left li.active > a,
+.h-person-left li.active > a:hover,
+.h-person-left .nav-tabs > li.active > a:hover,
+.h-person-left .nav-tabs > li.active > a:focus {
+  border: none;
+  background: none;
+  height: 100%;
+  color: #0090ff;
+}
+.h-person-left .nav-tabs > li > a {
+  line-height: 42px;
+}
+.h-person-right {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.h-person-right .h-house-list-one {
+  padding: 20px 0;
+}
+.h-person-box {
+  padding-left: 180px;
+  position: relative;
+  min-height: 200px;
+}
+.h-person-box .h-person-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.h-person-ul2 {
+  float: left;
+}
+.h-person-ul2 li {
+  border-bottom: 1px dashed #e2e2e2;
+  padding: 20px 0;
+  clear: both;
+}
+.h-person-ul2 .tag {
+  font-size: 14px;
+}
+.h-person-ul2 .tag a {
+  color: #1faf2d;
+  padding: 0 10px;
+}
+/*个人中心 person End*/
+/*************zyb*****************/
+.h-zybk-bg {
+  width: 100%;
+  background: url("http://hifang.local.com/main/resource/frontend/img/bg/zybg.jpg") top center no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+}
+.h-zybk {
+  padding-left: 75px;
+}
+.h-zybk .desc h1,
+.h-zybk .desc h2,
+.h-zybk .desc p,
+.h-zybk .desc a {
+  color: #ffffff;
+}
+.h-zybk .desc h1 {
+  font-size: 70px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+.h-zybk .desc h1 span {
+  margin-right: 80px;
+}
+.h-zybk .desc h2 {
+  font-size: 30px;
+}
+.h-zybk .desc p {
+  font-size: 18px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.h-zybk .desc .btn-u {
+  font-size: 24px;
+  margin-top: 60px;
+  padding: 10px 70px;
+}
+.h-zybk .step {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 550px;
+}
+.h-zybk .step dt,
+.h-zybk .step dd {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+}
+.h-zybk .step dt:before,
+.h-zybk .step dd:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 0;
+  border: none;
+  border-top: 1px solid #ffffff;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  top: -10px;
+  left: 70px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.h-zybk .step dt {
+  width: 95px;
+  height: 95px;
+  padding: 20px 0 0 28px;
+  background: #0090ff;
+  border-radius: 100% !important;
+  top: 140px;
+  left: 10px;
+}
+.h-zybk .step dd span {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: #0090ff;
+  border-radius: 100% !important;
+  padding-top: 8px;
+  text-align: center;
+}
+.h-zybk .step .step01 {
+  top: 79px;
+  left: 134px;
+}
+.h-zybk .step .step01:before {
+  width: 180px;
+  top: 120px;
+  left: -15px;
+  -webkit-transform: rotate(65deg);
+  -moz-transform: rotate(65deg);
+  -o-transform: rotate(65deg);
+  -ms-transform: rotate(65deg);
+  transform: rotate(65deg);
+}
+.h-zybk .step .step02 {
+  top: 252px;
+  left: 214px;
+}
+.h-zybk .step .step02:before {
+  width: 250px;
+  top: -28px;
+  left: 36px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.h-zybk .step .step03 {
+  top: 166px;
+  left: 460px;
+}
+.h-zybk .step .step03:before {
+  width: 250px;
+  top: 140px;
+  left: -18px;
+  -webkit-transform: rotate(57deg);
+  -moz-transform: rotate(57deg);
+  -o-transform: rotate(57deg);
+  -ms-transform: rotate(57deg);
+  transform: rotate(57deg);
+}
+.h-zybk .step .step04 {
+  top: 394px;
+  left: 608px;
+}
+.h-zybk .step .step04:before {
+  width: 240px;
+  top: -85px;
+  left: -5px;
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -o-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
+.h-zybk .step .step05 {
+  top: 180px;
+  left: 788px;
+}
+.h-zybk .step .step05:before {
+  width: 230px;
+  top: -35px;
+  left: 32px;
+  -webkit-transform: rotate(-26deg);
+  -moz-transform: rotate(-26deg);
+  -o-transform: rotate(-26deg);
+  -ms-transform: rotate(-26deg);
+  transform: rotate(-26deg);
+}
+.h-zybk .step .step06 {
+  top: 82px;
+  left: 1000px;
+}
+.h-zybk .step .step06:before {
+  border: none;
+}
+.h-zyb {
+  width: 100%;
+}
+.h-zyb .h-menu-wrap {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+}
+.h-zyb .h-menu-wrap .container {
+  position: relative;
+}
+.h-zyb .h-menu-wrap .h-menu .tit {
+  font-size: 22px;
+  display: inline;
+  margin-bottom: 0;
+  margin-right: 45px;
+}
+.h-zyb .h-menu-wrap .h-menu .fa {
+  color: #1faf2d;
+}
+.h-zyb .h-menu-wrap .h-menu i {
+  margin-right: 25px;
+  margin-left: -20px;
+}
+.h-zyb .h-menu-wrap .h-menu span {
+  margin-right: 20px;
+}
+.h-zyb .h-menu-wrap .h-menu a.h-menu-hover {
+  padding: 21px 0;
+}
+.h-zyb .h-menu-wrap .h-menu a.green {
+  padding: 5px 25px;
+  border: 1px solid #1faf2d;
+}
+.h-zyb .h-menu-wrap .h-menu a:hover {
+  text-decoration: none;
+}
+.h-zyb .h-menu-wrap .h-menu a:hover.green {
+  color: #1faf2d;
+}
+.h-zyb .h-menu-wrap .h-menu-list {
+  display: none;
+  padding: 10px;
+  border: 1px solid #252525;
+  background: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  left: 195px;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul {
+  border-bottom: 1px dashed #969696;
+  margin-bottom: 0;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul:last-child {
+  border-bottom: none;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li {
+  width: 204px;
+  float: left;
+  padding: 10px 0;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li a {
+  padding: 10px;
+  display: block;
+  border: 1px solid #f8f8f8;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li a.active {
+  border: 1px solid #1faf2d;
+  background: #fff;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li a:hover {
+  border: 1px solid #53e161;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li strong,
+.h-zyb .h-menu-wrap .h-menu-list ul li span {
+  display: block;
+  line-height: 20px;
+  margin-right: 0;
+}
+.h-zyb .h-menu-wrap .h-menu-list ul li strong {
+  color: #252525;
+}
+.h-zyb .h-zyb-ban img {
+  border: none;
+}
+.h-zyb .h-zyb-ban .container {
+  position: relative;
+}
+.h-zyb .h-zyb-ban .container .h-txt {
+  color: #ffffff;
+  background: #000;
+  width: 80%;
+  padding: 30px 15px;
+  position: absolute;
+  top: -340px;
+  left: 10%;
+  z-index: 1;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  line-height: 150%;
+}
+.h-zyb .h-zyb-ban .container .h-txt .city {
+  font-size: 28px;
+  border-right: 3px solid #fff;
+  text-align: center;
+}
+.h-zyb .h-zyb-ban .container .h-txt .city span {
+  font-size: 38px;
+  line-height: 38px;
+}
+.h-zyb .h-zyb-ban .container .h-txt .tit {
+  font-size: 16px;
+}
+.h-zyb .h-zyb-tab .nav {
+  padding-left: 15px;
+}
+.h-zyb .h-zyb-tabcon .col-sm-4 {
+  padding-left: 0;
+}
+.h-zyb #xh .col-sm-6 {
+  padding: 0 30px;
+}
+.h-zyb .h-xh-box {
+  position: relative;
+  border: 2px solid #f2f2f2;
+  padding: 30px 25px;
+  margin-top: 70px;
+  /*
+    .glyphicons.more:before{
+      border:2px solid @grey1;
+      border-radius:50%;
+      color:@green;
+    }*/
+}
+.h-zyb .h-xh-box h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 18px;
+}
+.h-zyb .h-xh-box h2 span {
+  padding-bottom: 17px;
+  padding-right: 10px;
+  border-bottom: 3px solid #0090ff;
+}
+.h-zyb .h-xh-box a {
+  position: absolute;
+  margin-top: -55px;
+  right: 25px;
+}
+.h-zyb .h-xh-box a .fa {
+  border: 1px solid #929292;
+  width: 14px;
+  text-align: center;
+}
+.h-zyb .h-zyb-gh {
+  position: relative;
+  padding-bottom: 100px;
+  padding-left: 25px;
+}
+.h-zyb .h-zyb-gh h2 {
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px dotted #929292;
+}
+.h-zyb .h-zyb-gh .linediv:before {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #e6e6e6;
+  border-image: none;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 10px;
+  max-width: 2px;
+  position: absolute;
+  top: 0;
+}
+.h-zyb .h-zyb-gh .itemdiv {
+  padding-top: 40px;
+  position: relative;
+}
+.h-zyb .h-zyb-gh .itemdiv:last-child {
+  padding-bottom: 40px;
+}
+.h-zyb .h-zyb-gh .itemdiv ul {
+  margin-bottom: 0;
+}
+.h-zyb .h-zyb-gh .itemdiv .sign {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 100% !important;
+  background: #0090ff;
+  text-align: center;
+  color: #ffffff;
+}
+.h-zyb .h-zyb-gh .itemdiv .circle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #cdcdcd;
+  border-radius: 100% !important;
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 6px;
+}
+.h-zyb .h-zyb-gh .itemdiv .ghlist {
+  width: auto;
+  position: relative;
+  margin-left: 45px;
+}
+.h-zyb-set h1 {
+  font-size: 22px;
+}
+.h-zyb-set .btn-u {
+  padding: 6px 45px;
+  display: block;
+  margin: 55px auto 200px;
+}
+.h-zyb-set .h-set-tit li {
+  float: left;
+  position: relative;
+  background: #eef2ec;
+  color: #1faf2d;
+  padding: 9px 50px 9px 40px;
+}
+.h-zyb-set .h-set-tit li .num {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+  border-radius: 100% !important;
+  background: #87d08b;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 25px;
+  text-align: center;
+}
+.h-zyb-set .h-set-tit li .arrow-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 19px;
+  height: 42px;
+  background: url("http://hifang.local.com/main/resource/frontend/img/icon/arrow-r.png") 0 0 no-repeat;
+}
+.h-zyb-set .h-set-tit li:last-child .arrow-r {
+  width: 12px;
+  height: 42px;
+  background-position: -22px 0;
+}
+.h-zyb-set .h-set-list li {
+  position: relative;
+  padding: 15px 0 5px;
+  border-bottom: 1px dashed #e2e2e2;
+}
+.h-zyb-set .h-set-list li span,
+.h-zyb-set .h-set-list li a {
+  display: inline-block;
+}
+.h-zyb-set .h-set-list li .tit {
+  width: 130px;
+  color: #929292;
+  position: absolute;
+  margin-top: 0;
+}
+.h-zyb-set .h-set-list li .opt {
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 40px;
+}
+.h-zyb-set .h-set-list li .opt.h {
+  height: 38px;
+  overflow: hidden;
+}
+.h-zyb-set .h-set-list li .opt a {
+  padding: 3px 20px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+}
+.h-zyb-set .h-set-list li .opt a:hover,
+.h-zyb-set .h-set-list li .opt a.active,
+.h-zyb-set .h-set-list li .opt a:focus {
+  color: #ffffff;
+  background: #0090ff;
+}
+.h-zyb-set .h-set-list li .opt label {
+  margin-right: 45px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.h-zyb-set .h-set-list li .opt label input {
+  margin-right: 5px;
+}
+.h-zyb-set .h-set-list li .h-house-choose-more {
+  top: 10px;
+}
+.h-zyb-set .h-set-list .h-range {
+  position: relative;
+  width: 520px;
+  background: #ededed;
+  height: 10px;
+  margin-top: 10px;
+}
+.h-zyb-set .h-set-list .h-range .h-progress {
+  width: 100%;
+  background: #0090ff;
+  height: 2px;
+  position: absolute;
+  top: 4px;
+}
+.h-zyb-set .h-set-list .h-range .h-range-l,
+.h-zyb-set .h-set-list .h-range .h-range-r {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a8a8a8;
+  background: #f6f6f6;
+  position: absolute;
+  top: -5px;
+  cursor: pointer;
+}
+.h-zyb-set .h-set-list .h-range .h-range-l {
+  left: 0;
+}
+.h-zyb-set .h-set-list .h-range .h-range-r {
+  right: 0;
+}
+.h-zyb-set .h-set-list .h-zprice {
+  width: 520px;
+  margin-top: 10px;
+}
+.h-zyb-set .h-set-list .h-zprice .min {
+  float: left;
+}
+.h-zyb-set .h-set-list .h-zprice .max {
+  float: right;
+}
+/*************end zyb*****************/
+/*登录 login*/
+.h-loginwrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+}
+.h-loginwrap .h-opacity {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.6;
+  filter: alhpa(opacity=60);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.h-loginwrap .h-loginbox {
+  width: 336px;
+  float: none;
+  background: #f6f6f6;
+  border-top: 4px solid #0090ff;
+  padding-top: 26px;
+  z-index: 20;
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  margin-left: -170px;
+}
+.h-loginwrap .h-loginbox h4 {
+  text-align: center;
+  color: #000000;
+}
+.h-loginwrap .h-loginbox .h-detail-telnum {
+  font-size: 16px;
+  height: 40px;
+  line-height: 32px;
+  border: none;
+  margin: 10px 0;
+}
+.h-loginwrap .h-loginbox .h-login-siginp {
+  font-size: 14px;
+}
+.h-loginwrap .h-loginbox .h-login-siginp .h-login-sigina {
+  color: #0090ff;
+}
+.h-loginwrap .h-loginbox .h-login-siginp .h-login-sigina2 {
+  color: #0090ff;
+  float: right;
+}
+.h-loginwrap .h-loginbox .h-login-siginp2 {
+  margin: 30px 0 0;
+}
+.h-loginwrap .h-loginbox .h-detail-checkbox {
+  height: 14px;
+  width: 14px;
+  margin: 6px 10px 0 0;
+  float: left;
+}
+.h-loginwrap .errTip {
+  color: #C26542;
+  font-size: 12px;
+}
+.h-loginwrap .alert {
+  margin-top: 10px;
+}
+/*登录 login End*/
+/*注册1 signin*/
+.h-signin-linebox {
+  margin: 40px auto;
+  text-align: center;
+  height: 46px;
+  overflow: hidden;
+}
+.h-signin-lineone {
+  text-align: left;
+  width: 20%;
+  height: 42px;
+  left: 70px;
+  display: inline-block;
+  position: relative;
+}
+.h-signin-lineone .h-signin-linenum {
+  display: inline-block;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100% !important;
+  background: #bbb8b9;
+  text-align: center;
+  color: #ffffff;
+  z-index: 9;
+  position: absolute;
+  left: -6px;
+}
+.h-signin-lineone .h-signin-linecontent {
+  display: inline-block;
+  width: 84%;
+  height: 30px;
+  text-align: center;
+  color: #999;
+  z-index: 7;
+  position: absolute;
+  left: 24px;
+  font-size: 16px;
+  margin-top: -5px;
+}
+.h-signin-lineone:before {
+  border-bottom: 2px solid #bbb8b9;
+  bottom: 16px;
+  content: "";
+  display: block;
+  left: 14px;
+  width: 100%;
+  position: absolute;
+  margin-left: -10px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #9c9c9c;
+}
+.h-signin-lineblue .h-signin-linenum {
+  background: #0090ff;
+}
+.h-signin-lineblue .h-signin-linecontent {
+  color: #000;
+}
+.h-signin-lineblue:before {
+  color: #262626;
+}
+.h-signin-lineblue:before {
+  border-color: #0090ff;
+}
+.h-signin-linetwo {
+  border-top: 2px solid #bbb8b9;
+  margin-top: -24px;
+}
+.h-signin-formbox {
+  width: 480px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.h-signin-formbox .h-sign-btn {
+  width: 100%;
+  background: #1eae2d;
+  border: none;
+  outline: none;
+  height: 39px;
+  color: #fff;
+}
+.h-signin-formbox .h-login-siginp {
+  margin-top: 25px;
+}
+.h-signin-formbox .h-login-siginp a {
+  color: #0090ff;
+}
+.h-signin-formbox .h-login-siginp2 {
+  float: right;
+  margin-top: 25px;
+}
+.h-signin-formbox .h-login-siginp2 a {
+  color: #0090ff;
+}
+.h-signin-formbox .form-group {
+  margin-bottom: 23px;
+}
+.h-signin-formbox .h-signinbg {
+  background: url("http://hifang.local.com/main/resource/frontend/img/siginbg1.png") 0 0 no-repeat;
+  position: absolute;
+  left: -115px;
+  top: 0;
+  width: 160px;
+  height: 85px;
+}
+.h-signin-formbox .h-signinbg2 {
+  background: url("http://hifang.local.com/main/resource/frontend/img/siginbg2.png") 0 0 no-repeat;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  width: 121px;
+  height: 108px;
+}
+.h-signin-app {
+  width: 390px;
+  height: 183px;
+  padding: 28px 40px;
+  border: 1px dashed #c9c9c9;
+  margin: 10px auto 70px;
+}
+.h-signin-app .h-signin-appimg {
+  padding: 5px;
+  box-shadow: 0px 0px 7px #ccc;
+  float: left;
+}
+.h-signin-app .h-signin-appdiv {
+  float: right;
+  width: auto;
+  text-align: center;
+}
+.h-signin-app .h-signin-appdiv h3 {
+  font-weight: bold;
+  height: 50px;
+}
+/*注册1 signin End*/
+/*注册2 signin*/
+.h-signin2-p1 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #262626;
+}
+/*注册2 signin End*/
+/*注册3 signin*/
+.h-signin3-formbox {
+  width: 580px;
+}
+.h-login-siginp3 {
+  margin: 10px 0;
+}
+.h-login-siginp3 a {
+  color: #0090ff;
+}
+/*注册3 signin End*/
+/*注册4 signin */
+.h-signin4-linebox {
+  width: 400px;
+}
+.h-signin-surcess {
+  text-align: center;
+  color: #1faf2d;
+}
+.h-signin-surcess i {
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  border: 2px solid #1faf2d;
+  font-size: 34px;
+  color: #1faf2d;
+  line-height: 48px;
+}
+.h-signin-abox {
+  text-align: center;
+  color: #8b8b8b;
+}
+/*注册4 signin End*/
+/***************account***************/
+.h-account .caption {
+  font-size: 22px;
+  padding-top: 5px;
+}
+.h-account-tab {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 120px;
+}
+.h-account-tab .nav a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.h-account-tab .person {
+  padding: 30px 30px 80px;
+}
+.h-account-tab .p-list .headpic .tit {
+  margin-top: 30px;
+}
+.h-account-tab .p-list .headpic img {
+  margin: 0;
+}
+.h-account-tab .p-list .headpic .maskhead {
+  width: 96px;
+  height: 96px;
+  background: url("http://hifang.local.com/main/resource/frontend/img/static/maskhead.png") top center no-repeat;
+  position: absolute;
+  margin-top: -93px;
+  margin-left: -3px;
+}
+.h-account-tab .p-list .headpic .btn-u {
+  position: relative;
+  margin-top: 30px;
+  color: #1faf2d;
+  background: #f3fff3;
+  padding: 0 13px;
+  height: 24px;
+  line-height: 24px;
+}
+.h-account-tab .p-list label {
+  font-weight: normal;
+}
+.h-account-tab .p-list li {
+  padding: 10px 0;
+  line-height: 36px;
+}
+.h-account-tab .p-list li input[type="text"],
+.h-account-tab .p-list li input[type="submit"] {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #cacaca;
+  padding: 3px 5px;
+}
+.h-account-tab .p-list li input[type="text"].err,
+.h-account-tab .p-list li input[type="submit"].err {
+  border: 1px solid #1faf2d;
+  background: #f3fff3;
+}
+.h-account-tab .p-list li input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.h-account-tab .p-list li input[type="radio"]:last-child {
+  margin-left: 20px;
+}
+.h-account-tab .p-list li:last-child .btn-u {
+  border: none;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.h-account-tab .p-list li .msg {
+  color: #929292;
+}
+.h-account-tab .safe {
+  padding: 35px 25px;
+}
+.h-account-tab .safe-list ul {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px dashed #e2e2e2;
+  margin: 0;
+  padding: 15px 0;
+  line-height: 20px;
+}
+.h-account-tab .safe-list ul .col-f,
+.h-account-tab .safe-list ul .col-l {
+  position: absolute;
+  top: 25px;
+}
+.h-account-tab .safe-list ul .col-f {
+  width: 70px;
+  left: 0;
+}
+.h-account-tab .safe-list ul .col-l {
+  width: 45px;
+  right: 0;
+  text-align: right;
+  font-weight: 700;
+}
+.h-account-tab .safe-list ul li:nth-child(2) {
+  padding-left: 80px;
+  margin-top: 10px;
+}
+.h-account-tab .safe-list ul li:nth-child(3) {
+  padding-right: 55px;
+  color: #929292;
+}
+@media (min-width: 960px) {
+  .h-account-tab {
+    width: 830px;
+  }
+}
+.h-replace h1 {
+  font-size: 22px;
+}
+.h-replace .h-rebox {
+  width: 350px;
+  margin: 60px auto;
+}
+.h-replace .h-rebox input,
+.h-replace .h-rebox span {
+  float: left;
+}
+.h-replace .h-rebox input {
+  width: 250px;
+  padding: 3px 5px;
+}
+.h-replace .h-rebox span {
+  width: 100px;
+  line-height: 30px;
+  text-align: right;
+}
+.h-replace .h-rebox .btn-u {
+  margin-top: 30px;
+}
+.h-replace label {
+  font-weight: normal;
+  display: block;
+}
+/***************end account***********/

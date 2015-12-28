@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>资讯二级页面</title>
+        <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <!-- <link rel="stylesheet" href="../thirdvendor/bootstrap3.2/css/bootstrap.min.css"> -->
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script> 
+
+    </head>
+    <body>
+        <header>
+            <div class="h-head">
+                <div class="h-top">
+                   <a href="#" class="h-browse-left">
+                        <i class="icon-angle-left" id="h-recom-list"></i>
+                    </a>
+                    <h1 class="h-resur-h1">全球 投资分析</h1>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="h-resu-in-image2">
+                <img src="../images/resu-image1_03A.png">
+                <div class="h-resu-in-tittle">
+                    <h3>2015澳大利亚经济形势展望</h3>
+                </div>
+            </div>
+            <ul class="h-resu-news2">
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+                <li class="h-resu-line">
+                    [房式快讯]2015澳大利亚经济形势展望
+                </li>
+                <li>
+                    [房式快讯]学区房-澳大的阿雪分布一栏
+                </li>
+            </ul>
+            <p id="more" class="h-resur-more">点击加载更多</p>
+         </section>
+         <script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+         <script src="../../thirdvendor/zepto1.0/touch.js"></script>
+         <script src="../js/base.js"></script>
+         <script>
+         var i = 1; //设置当前页数
+        $('#more').tap(function(){
+            $.ajax({
+                type:'GET',
+                url:'data.php',
+                data:{ page:i },
+                dataType:'json',
+                beforeSend:function(){
+                    loadMask();     //添加遮罩层
+                    $('#more').html('加载中...');
+                },
+                success:function(data){
+                    if(data){ 
+                        addMore(data);
+                        i++;   //+1,当再次加载时增加当前页码数
+                    }else{ 
+                        $('#more').hide(); 
+                        alert('没有更多内容了！'); 
+                    } 
+                },
+                error: function(){
+                    alert('加载错误！');
+                },
+                complete:function(){
+                    removeMask();   //数据加载完成后删除遮罩层
+                    $('#more').html('点击加载更多');
+                }
+            })
+        })
+         
+
+         function addMore(data){
+            var str = ""; 
+            $.each(data,function(index,array){ 
+                 str += '<li>'+array["name"]+'</li>'
+            }); 
+            $(".h-resu-news2").append(str);
+         }
+         </script>
+    </body>
+</html>

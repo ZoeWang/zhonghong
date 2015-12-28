@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->  
+<head>
+    <title>HiFang | 智业宝-忘记密码</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../thirdvendor/bootstrap3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../thirdvendor/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome4.2.0/css/font-awesome.min.css">
+
+    <!-- CSS Theme -->    
+    <!-- <link rel="stylesheet" href="../css/theme-colors/default.css"> -->
+
+    <!-- less 上线时需生成css引入并去掉less-->
+    <link rel="stylesheet/less" type="text/css" href="../less/default.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>   
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>  
+
+</head> 
+
+<body>
+<div class="wrapper">
+    <div class="h-page">
+        <div class="header-h">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo-header" src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <!-- 个人中心 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle h-person-self" data-toggle="dropdown">个人中心</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">个人中心</a></li>
+                                    <li><a href="#">个人中心</a></li>
+                                </ul>
+                            </li>
+                            <!-- /个人中心 -->
+                        </ul>
+                    </div>
+
+                    <!-- login reg -->
+                    <div class="h-loginbar pull-right">
+                        <!-- <a href="#">登录</a> | <a href="#">注册</a> -->
+                        <a href="#">账户设置 </a> | <a href="#"> 系统设置</a>
+                    </div>
+
+                </div>  
+            </div>
+        </div><!--/header-h-->
+
+        <!-- account -->
+        <div class="container h-account">
+            <h1 class="caption">忘记密码</h1>
+            <div class="h-account-tab tab-v5">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tabMobile" data-toggle="tab"></i>用手机找回</a></li>
+                        <li><a href="#tabEmail" data-toggle="tab">用电子邮箱找回</a></li>
+                    </ul>                
+                    <div class="tab-content">
+                        <!-- 手机找回 -->
+                        <div class="tab-pane fade in active person" id="tabMobile">
+                            <form id="telForm" action="" class="">
+                            <ul class="list-unstyled p-list">
+                                <li>
+                                    <div class="alert alert-danger fade in" style="diaplay:block;">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <strong>Oh snap!</strong> Change a few things up and <a class="alert-link" href="#">try submitting again.</a>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        手机号
+                                    </label>
+                                    <div class="h-repwd col-sm-10">
+                                        <input id="mobile" type="text" name="" placeholder="请输入您注册时使用的手机号" value=""> 
+                                        &nbsp;&nbsp;
+                                        <input type="button" class="btn-u h-authcode" id="authcode" value="获取验证码">
+                                       
+                                        <span class="errTip"></span>
+                                        
+                                    </div>
+                                    
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        验证码
+                                    </label>
+                                    <div class="h-repwd col-sm-10">
+                                        <input id="code" type="text" name="" maxlength="4" placeholder="请输入您收到的短信验证码" value="">
+                                        &nbsp;&nbsp;
+                                        <a class="notip" href="#">收不到验证码？</a>
+                                        <span class="errTip"></span>
+                                        
+                                    </div>
+                                   
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                    </label>
+                                    <div class="h-repwd col-sm-10">
+                                        <input class="btn-u btn-u-blue" type="submit" name="" id="backByTel" value="下一步">
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                            </form>
+                        </div><!-- /手机找回 -->
+                        <!-- 电子邮箱找回 -->
+                        <div class="tab-pane fade in person" id="tabEmail">
+                            <form id="emailForm" action="" class="">
+                            <ul class="list-unstyled p-list">
+                                <li>
+                                    <div class="alert alert-danger fade in" style="diaplay:block;">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <strong>Oh snap!</strong> Change a few things up and <a class="alert-link" href="#">try submitting again.</a>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2"></label>
+                                    <div class="h-input col-sm-10">
+                                        填写电子邮箱并点击下一步后，您将收到即刻海外发送的一封验证邮件，<br/>
+                                        请点击邮件中的链接地址设置新的密码
+                                    </div>
+                                    
+                                </li>
+                                
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        电子邮箱
+                                    </label>
+                                    <div class="h-repwd col-sm-10">
+                                        <input id="email" type="text" name="" placeholder="请输入您注册时使用的电子邮箱" value="">&nbsp;&nbsp;
+                                        <a class="notip" href="#">收不到验证码？</a>
+                                        <span class="errTip"></span>
+                                        
+                                    </div>
+                                    
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                    </label>
+                                    <div class="h-repwd col-sm-10">
+                                        <input class="btn-u btn-u-blue" type="submit" id="backByEmail" name="" value="下一步">
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                            </form>
+                            
+                        </div><!-- /电子邮箱找回 -->
+                        
+                        
+                    </div><!-- /tab-content -->
+
+            </div><!-- /col-sm-8 -->
+        </div><!-- /account -->
+        
+        
+    </div><!-- /h-page -->
+</div><!--/wrapper-->
+
+<div class="footer-h">
+    <div class="container">
+        <ul class="list-unstyled h-footer clearfix">
+            <li class="col-xs-3"><a href="">触屏版</a>|</li>
+            <li class="col-xs-3"><a href="">关于我们</a>|</li>
+            <li class="col-xs-3"><a href="">服务声明</a>|</li>
+            <li class="col-xs-3"><a href="">联系我们</a></li>
+        </ul>
+        <div class="h-copyright col-sm-12">Copyright © 2014 JKHW.com. All Rights Reserved. 北京中弘网络营销顾问有限公司 </div>
+    </div>
+</div><!-- /footer-h -->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/bootstrap3.2/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<!-- JS Customization -->
+<script>
+    jQuery(document).ready(function() {
+       
+    });
+
+   ;$(function(){
+        'use strict';
+        
+        var tel,code,email,numRule,telRule,emailRule,checkTel,checkTelForm,checkEmailForm,init,checkAjax,
+            numRule = /^[0-9]*$/,
+            telRule = /^((13[0-9])|(15[0-9])|(170)|(18[0-9])|)\d{8}$/,
+            emailRule = /^[_a-zA-Z0-9_-_._-]+@([_a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,3}$/;
+
+        checkTel = function(){
+            tel = $('#mobile').val().trim();
+            if(tel == ''){
+                $('#mobile').siblings('.errTip').text('手机号码不能为空！');
+                return false;
+            }else if (!telRule.test(tel)) {
+                $('#mobile').siblings('.errTip').text('手机号码格式错误！');
+                return false;
+            }
+            return true;
+        }
+
+        checkAjax = function(){
+            $.ajax({
+                type: 'POST',
+                url: 'index.php',
+                data: $('#layerLoginForm').serialize(),
+                complete: function() {
+                    //remove mask
+                },
+                success: function(data) {
+                    data = eval('[' + data + ']')[0];
+                    if (data.success) {
+                        window.location.reload();
+                        return;
+                    } else { 
+                        if (data.errmsg) {
+                            $('.alert').after(data.errmsg);
+                        }
+                    }
+                },
+                error: function() {
+                    alert('网络异常，请重新登录');
+                }
+            });
+            return false;
+        }
+
+        checkTelForm = function(){
+            tel = $('#mobile').val().trim(),
+            code = $('#code').val().trim();
+            if(tel == ''){
+                $('#mobile').siblings('.errTip').text('手机号码不能为空！');
+                return false;
+            }else if (!telRule.test(tel)) {
+                
+                $('#mobile').siblings('.errTip').text('手机号码格式错误！');
+                return false;
+               
+            }
+            if(code.length !== 4){
+                $('#code').siblings('.errTip').text('请输入您收到的短信验证码！');
+                return false;
+            }
+            $('#telForm').submit();
+
+        }
+        checkEmailForm = function(){
+            email = $('#email').val().trim();
+            
+            if(email == ''){
+                $('#email').siblings('.errTip').text('邮箱不能为空！');
+                return false;
+            }else if (!emailRule.test(email)) {
+                $('#email').siblings('.errTip').text('邮箱格式错误！');
+                return false;
+            }
+            $('#emailForm').submit();
+        }
+
+        
+
+        init = function(){
+            $('.errTip').text('');
+            $('#mobile, #code').focus(function(){
+                $('.errTip').text('');
+            });
+            $('#backByTel').click(function(){
+                checkAjax();
+                return checkTelForm();
+            });
+            $('#backByEmail').click(function(){
+                checkAjax();
+                return checkEmailForm();
+            });
+            $("#authcode").click(function(){
+                if (checkTel()) {
+                    $('#authcode').setBtnTimer();
+                }; 
+            });
+        }
+        init();
+   })
+
+    $.fn.setBtnTimer = function(options) {
+        "use strict";
+        var defaults = {
+            'time': 60
+        };
+        var settings = $.extend({},defaults, options);
+        this.attr("disabled","disabled");
+        var that = this,
+            oldv = that.val(),
+            timer,
+            tick = function(){
+                settings.time--;
+                that.val(settings.time+'s后可在此操作');
+                if(settings.time<1){
+                    that.removeAttr("disabled");
+                    window.clearInterval(timer);
+                    that.val(oldv);
+                }
+            };
+        return this.each(function(){
+            timer = window.setInterval(tick, 1000);
+        });
+    }
+
+</script>
+
+<!--[if lt IE 9]>
+    <script src="../../thirdvendor/respond.js"></script>
+    <script src="../../thirdvendor/html5shiv.js"></script>
+    <script src="../js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->  
+<head>
+    <title>HiFang | 智业宝进入页</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../thirdvendor/bootstrap3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../thirdvendor/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome4.2.0/css/font-awesome.min.css">
+
+    <!-- CSS Theme -->    
+    <!-- <link rel="stylesheet" href="../css/theme-colors/default.css"> -->
+
+    <!-- less 上线时需生成css引入并去掉less-->
+    <link rel="stylesheet/less" type="text/css" href="../less/default.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>   
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>  
+    <style>
+    .h-zybk-bg {
+      width: 100%;
+      background: url("http://hifang.local.com/main/resource/frontend/img/bg/zybg.jpg") top center no-repeat;
+      background-size: 100% 100%;
+      height: auto;
+    }
+    .h-zybk {
+      padding-left: 75px;
+    }
+    .h-zybk .desc h1,
+    .h-zybk .desc h2,
+    .h-zybk .desc p,
+    .h-zybk .desc a {
+      color: #ffffff;
+    }
+    .h-zybk .desc h1 {
+      font-size: 70px;
+      line-height: 100%;
+      margin-top: 100px;
+    }
+    .h-zybk .desc h1 span {
+      margin-right: 80px;
+    }
+    .h-zybk .desc h2 {
+      font-size: 30px;
+    }
+    .h-zybk .desc p {
+      font-size: 18px;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+    }
+    .h-zybk .desc .btn-u {
+      font-size: 24px;
+      margin-top: 60px;
+      padding: 10px 70px;
+    }
+    .h-zybk .step {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 550px;
+    }
+    .h-zybk .step dt,
+    .h-zybk .step dd {
+      color: #ffffff;
+      font-size: 20px;
+      position: absolute;
+    }
+    .h-zybk .step dt:before,
+    .h-zybk .step dd:before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 0;
+      border: none;
+      border-top: 1px solid #ffffff;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+      top: -10px;
+      left: 70px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    .h-zybk .step dt {
+      width: 95px;
+      height: 95px;
+      padding: 20px 0 0 28px;
+      background: #0090ff;
+      border-radius: 100% !important;
+      top: 140px;
+      left: 10px;
+    }
+    .h-zybk .step dd span {
+      display: block;
+      width: 46px;
+      height: 46px;
+      background: #0090ff;
+      border-radius: 100% !important;
+      padding-top: 8px;
+      text-align: center;
+    }
+    .h-zybk .step .step01 {
+      top: 79px;
+      left: 134px;
+    }
+    .h-zybk .step .step01:before {
+      width: 180px;
+      top: 120px;
+      left: -15px;
+      -webkit-transform: rotate(65deg);
+      -moz-transform: rotate(65deg);
+      -o-transform: rotate(65deg);
+      -ms-transform: rotate(65deg);
+      transform: rotate(65deg);
+    }
+    .h-zybk .step .step02 {
+      top: 252px;
+      left: 214px;
+    }
+    .h-zybk .step .step02:before {
+      width: 250px;
+      top: -28px;
+      left: 36px;
+      -webkit-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+    .h-zybk .step .step03 {
+      top: 166px;
+      left: 460px;
+    }
+    .h-zybk .step .step03:before {
+      width: 250px;
+      top: 140px;
+      left: -18px;
+      -webkit-transform: rotate(57deg);
+      -moz-transform: rotate(57deg);
+      -o-transform: rotate(57deg);
+      -ms-transform: rotate(57deg);
+      transform: rotate(57deg);
+    }
+    .h-zybk .step .step04 {
+      top: 394px;
+      left: 608px;
+    }
+    .h-zybk .step .step04:before {
+      width: 240px;
+      top: -85px;
+      left: -5px;
+      -webkit-transform: rotate(-50deg);
+      -moz-transform: rotate(-50deg);
+      -o-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+      transform: rotate(-50deg);
+    }
+    .h-zybk .step .step05 {
+      top: 180px;
+      left: 788px;
+    }
+    .h-zybk .step .step05:before {
+      width: 230px;
+      top: -35px;
+      left: 32px;
+      -webkit-transform: rotate(-26deg);
+      -moz-transform: rotate(-26deg);
+      -o-transform: rotate(-26deg);
+      -ms-transform: rotate(-26deg);
+      transform: rotate(-26deg);
+    }
+    .h-zybk .step .step06 {
+      top: 82px;
+      left: 1000px;
+    }
+    .h-zybk .step .step06:before {
+      border: none;
+    }
+    </style>
+</head> 
+
+<body>
+<div class="wrapper">
+    <div class="h-page">
+        <div class="header-h">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo-header" src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <!-- 首页 -->
+                            <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">首页</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">首页1</a></li>
+                                    <li><a href="#">首页2</a></li>
+                                </ul>
+                            </li>
+                            <!-- /首页 -->
+                            <!-- 房源 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">房源</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">房源1</a></li>
+                                    <li><a href="#">房源2</a></li>
+                                </ul>
+                            </li>
+                            <!-- /房源 -->
+                            <!-- 投资 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">投资</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">投资</a></li>
+                                    <li><a href="#">投资</a></li>
+                                </ul>
+                            </li>
+                            <!-- /投资 -->
+                            <!-- 资讯 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">资讯</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                </ul>
+                            </li>
+                            <!-- /资讯 -->
+                            <!-- 智业宝 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">智业宝</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">智业宝</a></li>
+                                    <li><a href="#">智业宝</a></li>
+                                </ul>
+                            </li>
+                            <!-- /智业宝 -->
+                            <!-- 个人中心 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">个人中心</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">个人中心</a></li>
+                                    <li><a href="#">个人中心</a></li>
+                                </ul>
+                            </li>
+                            <!-- /个人中心 -->
+                        </ul>
+                    </div>
+
+                    <!-- login reg -->
+                    <div class="h-loginbar pull-right">
+                        <a href="#">登录</a> | <a href="#">注册</a>
+                    </div>
+
+                </div>  
+            </div>
+        </div><!--/header-h-->
+
+        <!--h-content-->
+        <div class="h-zybk-bg">
+            <div class="container h-zybk">
+                <!-- top -->
+                <div class="desc">
+                    <h1><span>智</span><span>业</span>宝</h1>
+                    <h2>开启您的海外地产置业之旅</h2>
+                    <p>
+                        有兴趣投资海外地产，但不了解整个购房环节、相关法律、政策、语言还不通？<br/>
+                        现在您有福了！<br/>
+                        开启"智业宝"即可解决上述问题，<br/>
+                        全程协助您选好房子，买好房子！
+                    </p>
+                    <a class="btn-u" href="#">立即开启</a>
+                </div><!-- /top -->
+                <!-- bottom -->
+                <dl class="step">
+                    <dt>为您<br/>带来</dt>
+                    <dd class="step01">
+                        <span>1</span>
+                        个性化定制评估
+                    </dd>
+                    <dd class="step02">
+                        <span>2</span>优质房源推送
+                    </dd>
+                    <dd class="step03">
+                        <span>3</span>核心资讯解读
+                    </dd>
+                    <dd class="step04">
+                        <span>4</span>签订合同
+                    </dd>
+                    <dd class="step05">
+                        <span>5</span>买房过程全程跟进
+                    </dd>
+                    <dd class="step06">
+                        <span>6</span>买房后维护服务跟进
+                    </dd>
+                </dl><!-- /bottom -->
+                
+            </div><!--/h-content-->
+        </div><!-- /h-zybk-bg -->
+        
+    </div><!-- /h-page -->
+</div><!--/wrapper-->
+
+<div class="footer-h">
+    <div class="container">
+        <ul class="list-unstyled h-footer clearfix">
+            <li class="col-xs-3"><a href="">触屏版</a>|</li>
+            <li class="col-xs-3"><a href="">关于我们</a>|</li>
+            <li class="col-xs-3"><a href="">服务声明</a>|</li>
+            <li class="col-xs-3"><a href="">联系我们</a></li>
+        </ul>
+        <div class="h-copyright col-sm-12">Copyright © 2014 JKHW.com. All Rights Reserved. 北京中弘网络营销顾问有限公司 </div>
+    </div>
+</div><!-- /footer-h -->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/bootstrap3.2/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+
+<!-- JS Customization -->
+<script type="text/javascript">
+
+
+</script>
+<!--[if lt IE 9]>
+    <script src="../../thirdvendor/respond.js"></script>
+    <script src="../../thirdvendor/html5shiv.js"></script>
+    <script src="../js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>

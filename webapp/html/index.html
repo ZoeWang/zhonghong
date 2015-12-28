@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>首页</title>
+    	<meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+    </head>
+    <body>
+        <header>
+           <nav class="h-head">
+               <a href="javascript:;" class="h-logo"></a>
+               <div class="h-nav">
+                   <a href="javascript:;" class="h-icon-home"></a>
+                   <a href="javascript:;" class="h-icon-news"></a>
+                   <a href="javascript:;" class="h-icon-zyb"></a>
+                   <a href="javascript:;" class="h-icon-user"></a>
+               </div>
+           </nav>
+           <div class="h-region">
+               <div class="h-region-l">
+                   <a href="javascript:;"><span class="h-region-text">全球</span>  <i class=" icon-angle-down"></i></a>
+               </div>
+               <!-- 有下拉框的一个页面添加一个遮罩层就行 -->
+               <div id="bodymask"></div>    
+               <!-- 综合下拉菜单内容 -->
+                <ul id="h-region-list" class="h-sel-list">
+                    <li value="1"><a href="houseCon.html">中国</a></li>
+                    <li value="2"><a href="houseCon.html">美国</a></li>
+                    <li value="3"><a href="houseCon.html">澳洲</a></li>
+                    <li value="4"><a href="houseCon.html">加拿大</a></li>
+                    <li value="5"><a href="houseCon.html">阿拉伯</a></li>
+                    <li value="6"><a href="houseCon.html">赞比亚</a></li>
+                </ul>
+
+                <!-- /综合下拉菜单内容 -->
+               <div class="h-region-r">
+                   <a href="" class="h-icon-map"></a>
+                   <a href="" class="h-icon-search"></a>
+                   <a href="" class="h-icon-filter"></a>
+               </div>
+           </div>
+        </header>
+        <section>
+            <nav class="h-sel">
+                <div class="h-all">
+                    <a href="#">
+                        <span class="h-sel-text">综合排序</span>
+                        <i class="icon-caret-down"></i>
+                    </a>
+                </div>
+                <!-- 综合下拉菜单内容 -->
+                
+                <ul id="h-sel-list" class="h-sel-list">
+                    <li value="1">无视从大到</li>
+                    <li value="2">将创修改交定金</li>
+                    <li value="3">及水电费</li>
+                    <li value="4">房子面积</li>
+                    <li value="5">院子从大到小</li>
+                    <li value="6">基金从大到小</li>
+                </ul>
+                <!-- /综合下拉菜单内容 -->
+                <div class="h-area">
+                    <a href="#">
+                        面积
+                        <i class="icon-angle-down"></i>
+                    </a>
+                </div>
+                <div class="h-price">
+                    <a href="#">
+                        价格
+                        <i class="icon-angle-down"></i>
+                    </a>
+                </div>
+                <div class="h-choose">
+                    <a href="#">
+                        筛选
+                        <!-- <i class="icon-caret-right"></i> -->
+                        <i class="icon-filter"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="ui-refresh">
+                <div class="ui-refresh-up"></div>
+                <ul class="data-list">
+                    <li class="h-inlist">
+                        <a href="houseCon.html">
+                            <i class="h-icon-heart-empty"></i>
+                            <img src="../images/in1.png" alt="">
+                            <div class="h-bgtext">
+                                <div class="clearfix">
+                                    <p class="h-bgtext-l">
+                                        <span class="h-fsb">海滨山间顶级豪宅</span><br/>
+                                        美国加利福尼亚洲 旧金山 490平米
+                                    </p>
+                                    <p class="h-bgtext-r">
+                                        USD 44,950,000 <br/> 
+                                        约<span class="h-fsbc">￥2750万</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="h-inlist">
+                        <a href="#">
+                            <i class="h-icon-heart"></i>
+                            <img src="../images/in1.png" alt="">
+                            <div class="h-bgtext">
+                                <div class="clearfix">
+                                    <p class="h-bgtext-l">
+                                        <span class="h-fsb">海滨山间顶级豪宅</span><br/>
+                                        美国加利福尼亚洲 旧金山 490平米
+                                    </p>
+                                    <p class="h-bgtext-r">
+                                        USD 4,495,000 <br/> 
+                                        约<span class="h-fsbc">￥2750万</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="ui-refresh-down"></div>
+            </div><!-- ui-refresh -->
+        </section>
+<!--组件依赖css begin-->
+<link rel="stylesheet" type="text/css" href="../css/gmu/loading.default.css" />
+<link rel="stylesheet" type="text/css" href="../css/gmu//widget/refresh/refresh.default.css" />    <!--皮肤文件，若不使用该皮肤，可以不加载-->
+<link rel="stylesheet" type="text/css" href="../css/gmu//widget/refresh/refresh.iscroll.default.css" />    <!--皮肤文件，若不使用该皮肤，可以不加载-->
+<script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+<script src="../../thirdvendor/zepto1.0/touch.js"></script>
+<script src="../../thirdvendor/gmu/extend/iscroll.js"></script>     <!--iScroll-->
+<script src="../../thirdvendor/gmu/core/gmu.js"></script>
+<script src="../../thirdvendor/gmu/core/event.js"></script>
+<script src="../../thirdvendor/gmu/core/widget.js"></script>
+<script src="../../thirdvendor/gmu/widget/refresh/refresh.js"></script>
+<script src="../../thirdvendor/gmu/widget/refresh/$iscroll.js"></script> 
+<script>
+$(function(){
+    dropmenu('.h-region-l','#h-region-list','#h-region-list li','.h-region-text');
+    dropmenu('.h-all','#h-sel-list','#h-sel-list li','.h-sel-text');
+    refresh();
+});
+
+
+function dropmenu(obj,list,check,text){
+    $(obj).on('tap',function(event){
+        var offset = $(this).offset();
+        $('#bodymask').show();
+        $(list).show().offset({
+            top:offset.top+32,left:0
+        });    
+        return false;
+    });     
+    $(check).on('click',function (event) {
+        $(text).html($(this).text());
+        $(list).hide();
+        $('#bodymask').hide();
+    });         
+    $(document.body).on('click',function(){
+        $(list).hide();
+        $('#bodymask').hide();
+    })
+}
+
+// function refresh(){
+//     $('.ui-refresh').css('height', window.innerHeight - ($('header').height() || 42)).refresh({
+//         load: function (dir, type) {
+//             var me = this;
+//             $.getJSON('refresh.php', function (data) {
+//                 var $list = $('.data-list'),
+//                     html = (function (data) {      //数据渲染
+//                         // var liArr = [];
+//                         $.each(data, function (i,data) {
+//                             // liArr.push(this.html);
+//                             var item = '<li class="h-inlist"><a href="#"><i class="h-icon-heart"></i><img src="'+data.img+'" alt=""><div class="h-bgtext"><div class="clearfix"><p class="h-bgtext-l"><span class="h-fsb">'+data.title+'</span><br/>'+data.des+'</p><p class="h-bgtext-r">'+data.USD+' <br/> 约<span class="h-fsbc">￥'+data.yuan+'</span></p></div></div></a></li>';
+//                             //$('.data-list').append(item);
+//                             $list[dir == 'up' ? 'prepend' : 'append'](item);
+//                         });
+//                         // return liArr.join('');
+//                     })(data);
+
+//                 // $list[dir == 'up' ? 'prepend' : 'append'](html);
+//                 me.afterDataLoading(dir);    //数据加载完成后改变状态
+//             });
+//         }
+//     });
+// }
+
+// 隐藏地址栏  & 处理事件的时候 ，防止滚动条出现
+addEventListener('load', function(){
+     setTimeout(function(){ window.scrollTo(0, 1); }, 100);
+});
+
+function c_favorite(tid, id, msg, cid) {
+            //判断是否登录   没有登录则跳转到登录页面 
+            if (parseInt(cid) == 0) {
+                if (confirm("您还没有登录,是否登录？")) {
+                    window.location.href = "m.php?r=site/login";
+                }
+            } else {
+
+                var show = $(msg).attr('class');
+                if (show == 'h-icon-heart') {
+                    $.get("m.php?r=customer/DeleteMyFavorite&object_id=" + id + "&favorite_type=" + tid, '', function(data) {
+                        if (data == "success")
+                        {
+                            $(msg).attr('class', 'h-icon-heart-empty');
+                        }
+                    });
+
+                } else if (show == 'h-icon-heart-empty') {
+                    $.get("m.php?r=customer/AddMyFavorite&object_id=" + id + "&favorite_type=" + tid, '', function(data) {
+                        if (data == 'success')
+                        {
+                            $(msg).attr('class', 'h-icon-heart');
+                        }
+                    });
+
+                }
+            }
+        }
+
+        //分页
+        var i = 2; //设置当前页数
+        $('#more').tap(function(){
+            $.ajax({
+                type:'GET',
+                url:'data.php',
+                data:{ page: i,country_id: cid },
+                dataType:'json',
+                beforeSend:function(){
+                    loadMask();     //添加遮罩层
+                    $('#more').html('加载中...');
+                },
+                success:function(data){
+                    if(data){ 
+                        addMore(data);
+                        if( (parseInt(i) * 20) >= parseInt($('#more').attr('alt')) ){
+                            $('#more').hide();
+                        }
+                        i++;   //+1,当再次加载时增加当前页码数
+                    }else{ 
+                        $('#more').hide(); 
+                        //alert('没有更多内容了！'); 
+                    } 
+                },
+                error: function(){
+                    alert('加载错误!');
+                },
+                complete:function(){
+                    removeMask();   //数据加载完成后删除遮罩层
+                    $('#more').html('点击加载更多');
+                }
+            })
+        })
+
+        // $('#more').click(function() {
+        //     var cid = $("#cid").val();
+        //     $.getJSON('m.php?r=house/listinfo', {page: i,country_id: cid}, function(data) {
+        //         if (data!='') {
+                   
+        //             addMore(data);
+                   
+        //             if( (parseInt(i) * 20) >= parseInt($('#more').attr('alt')) ){
+        //              $('#more').hide();
+        //                 }
+        //             i++;   //+1,此时页面滚动会再次触发加载
+        //         } else {
+        //             $('#more').hide();
+        //         }
+        //     });
+        // })
+
+        function addMore(data) {
+            var str = "";
+            $.each(data, function(index, array) {
+                var showClass = 'icon-heart-empty';
+                if (array.is_favorited == '1') {
+                    var showClass = 'h-icon-heart';
+                }
+                str += '<li class="h-inlist"><i class="' + showClass + '" onclick="c_favorite(1,' + array.house_id + ',this,' + array.customer_id + ')" ></i><a href="m.php?r=house/detail&house_id=' + array.house_id + '"><img src="' + array.house_thumb + '" data-src="holder.js/100%x300/auto" alt=""><div class="h-bgtext"><div class="clearfix"><p class="h-bgtext-l"><span class="h-fsb">' + array.house_name + '</span><br/>' + array.country.country_name_cn + ' ' + array.city.city_name_cn + array.display_area + '</p><p class="h-bgtext-r">' + array.local_currency + array.display_local_price + ' <br/> 约<span class="h-fsbc">￥' + array.display_chinese_price + '万</span></p></div></div></a></li>';
+            });
+            $(".data-list").append(str);
+        }
+
+      //出现点透等冒泡事件用click
+        $('.h-close').on('tap', function() {
+            $(this).parent().css('display', 'none');
+        });
+ 
+</script>
+
+
+
+    </body>
+</html>

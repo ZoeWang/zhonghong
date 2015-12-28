@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>screening 筛选页面</title>
+      <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储  -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+    </head>
+    <body>
+        <header>
+            <div class="h-head">
+                <div class="h-top">
+                    <a href="#" class="h-browse-left">
+                        <i class="icon-angle-left" id="h-recom-list"></i>
+                    </a>
+                    <h1>筛选条件</h1>
+                </div>
+            </div>
+        </header>
+        <section class="h-con">
+        <form action="" id="chooseForm">
+            <ul class="h-chs">
+                <li id="county">
+                    <p class="h-chs-tit">国家</p>
+                    <select class="" name="" id="">
+                        <option value="0">中国</option>
+                        <option value="1">米国</option>
+                        <option value="2">棒槌国</option>
+                        <option value="3">加拿大</option>
+                    </select>
+                </li>
+
+                <li id="state">
+                    <p class="h-chs-tit">州</p>
+                    <select class="" name="" id="">
+                        <option value="0">新南威尔士州</option>
+                        <option value="1">亚洲</option>
+                        <option value="2">非洲</option>
+                        <option value="3">北美洲</option>
+                    </select>
+                </li>
+
+                <li id="city">
+                    <p class="h-chs-tit">城市</p>
+                    <select class="" name="" id="">
+                        <option value="0">悉尼</option>
+                        <option value="1">北京</option>
+                        <option value="2">伦敦</option>
+                        <option value="3">丹夫</option>
+                    </select>
+                </li>
+               
+
+                <li>
+                    <p class="h-chs-tit">价位</p>
+                    ￥<input id="pricemin" type="text" name="" value="50">- &nbsp;&nbsp;&nbsp;<input id="pricemax" type="text" name="" value="100"> 万
+                </li>
+                <li id="house">
+                    <p class="h-chs-tit">物业类型</p>
+                    <select class="" name="" id="">
+                        <option value="0">普通公寓</option>
+                        <option value="1">豪华公寓</option>
+                        <option value="2">居民区</option>
+                        <option value="3">高级小区</option>
+                    </select>
+                </li>
+
+                <li id="area">
+                    <p class="h-chs-tit">建筑面积</p>
+                    <select class="" name="" id="">
+                        <option value="0">50-100平米</option>
+                        <option value="1">100-200平米</option>
+                        <option value="2">200-300平米</option>
+                        <option value="3">300-400平米</option>
+                    </select>
+                </li>
+
+                <li id="room">
+                    <p class="h-chs-tit">卧室数</p>
+                    <select class="" name="" id="">
+                        <option value="0">2</option>
+                        <option value="1">3</option>
+                        <option value="2">4</option>
+                        <option value="3">5</option>
+                    </select>
+                </li>
+
+            </ul>
+            <a href="javascript:;" class="h-chs-more">更多条件</a>
+            <div class="h-chs-btn clearfix">
+                <button type="reset" class="h-btngreybord">清空条件</button>
+                <input type="submit" name="" value="确定提交" id="sure" class="h-btngreen" />
+            </div>
+        </form>
+        </section>
+
+        <script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+        <script src="../js/app.js"></script>
+        <script>
+        $(function(){
+            $('#sure').click(function(e){
+                var min = $('#pricemin').val(),
+                    max = $('#pricemax').val();
+
+                if(min.length == 0 && max.length == 0){
+                    alert('请输入您筛选的价位！');
+                    e.preventDefault();
+                }else if(authRules.isInteger(min) == false || authRules.isInteger(max) == false){
+                    alert('价位只能是正整数！');
+                    e.preventDefault();
+                }else if(Number(max) != 0 && Number(min) >= Number(max)){
+                    //console.log(Number(min) < Number(max));
+                    alert('第一个价位必须小于第二个价位！');
+                    e.preventDefault();
+                   
+                }
+  
+            })
+        })
+        </script>
+
+    </body>
+</html>

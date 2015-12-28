@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的页</title>
+        <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <!-- <link rel="stylesheet" href="../thirdvendor/bootstrap3.2/css/bootstrap.min.css"> -->
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script> 
+
+    </head>
+    <body>
+        <header>
+            <div class="h-head">
+                <div class="h-top">
+                    <div class="h-resu-r">
+                        <a href="#" class="h-icon-th" id="nav" onclick="toggleKey();"></a>
+                   </div>
+                    <h1>我的</h1>
+                </div>
+            </div>
+            <nav class="h-navcl" id="navcl">
+               <a href="#">
+                   <i class="h-icon-home-grey"></i><br/>
+                   首页
+               </a>
+               <a href="#">
+                   <i class="h-icon-news-grey"></i><br/>
+                   资讯
+               </a>
+               <a href="#">
+                   <i class="h-icon-zyb-grey"></i><br/>
+                   智业宝
+               </a>
+               <a href="#">
+                   <i class="h-icon-user-grey"></i><br/>
+                   我的
+               </a>
+            </nav>
+        </header>
+        <section>
+            <div class="h-per-topwrap">
+                <div class="h-per-head">
+                    <img src="../imgs/h-per-head.png">
+                </div>
+                <div class="h-per-log">
+                    <!-- <a href="#">立即登录</a> -->
+                    <span  class="h-per-name">Hi,HKLJHKlili</span>
+                </div>
+                <span class="h-per-right">
+                    <a href="#" class="icon-angle-right"></a>
+                </span>
+            </div>
+        </section>
+        <section>
+            <dl class="h-per-list">
+                
+                <dd>我的收藏<i class="icon-angle-right"></i></dd>
+                <dt><img src="../imgs/h-per-cellect.png"></dt>
+            </dl>
+            <dl class="h-per-list">
+                <dd>浏览记录<i class="icon-angle-right"></i></dd>
+                <dt><img src="../imgs/h-per-re.png"></dt>
+                
+            </dl>
+            <dl class="h-per-list">
+                <dd>联系我们<i class="icon-angle-right"></i></dd>
+                <dt><img src="../imgs/h-per-cl.png"></dt>
+                
+            </dl>
+            <dl class="h-per-list">
+                <dd>系统设置<i class="icon-angle-right"></i></dd>
+                <dt><img src="../imgs/h-per-set.png"></dt>
+                
+            </dl>
+        </section>
+    </body>
+
+    <!-- basic -->
+    <script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+    <script src="../../thirdvendor/zepto1.0/touch.js"></script>
+
+    <!-- call -->
+    <script>
+    function toggleKey(){
+        if(document.getElementById('navcl').style.display=='block'){
+            document.getElementById('navcl').style.display='none';
+        }else{
+            document.getElementById('navcl').style.display='block';
+        }
+    };
+    </script>
+</html>

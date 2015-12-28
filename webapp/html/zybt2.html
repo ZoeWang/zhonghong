@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>智业宝投资</title>
+      <meta name="author" content="Hifang.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+        <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+        <meta http-equiv="Pragma" CONTENT="no-cache">  
+        <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+        <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+        <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+    </head>
+    <body>
+        <form action="">
+        <header class="h-zhead">
+            <div class="h-top">
+                <a href="#" class="h-browse-left">
+                    <i class="icon-angle-left" id="h-recom-list"></i>
+                </a>
+                <h1>智业宝</h1>
+                <button type="reset" value="reset" class="h-zreset">重设</button>
+            </div>
+        </header>
+        <section class="h-con h-zyb">
+            <h2>你想投资什么类型的物业？</h2>
+            <ul class="h-zyb-list" id="property">
+                <li>
+                    公寓
+                    <div class="h-checkbox">
+                        <input id="checkone" type="checkbox" name="" checked="checked" />
+                        <label for="checkone"></label>
+                    </div>
+                </li>
+                <li>
+                    别墅
+                    <div class="h-checkbox">
+                        <input id="checktwo" type="checkbox" name=""/>
+                        <label for="checktwo"></label>
+                    </div>
+                </li>
+                <li>
+                    土地
+                    <div class="h-checkbox">
+                        <input id="checkthree" type="checkbox" name=""/>
+                        <label for="checkthree"></label>
+                    </div>
+                </li>
+                <li>
+                    商业用房
+                    <div class="h-checkbox">
+                        <input id="checkfour" type="checkbox" name="" />
+                        <label for="checkfour"></label>
+                    </div>
+                </li>
+            </ul>
+
+            <h2>您的置业用途是？</h2>
+            <ul class="h-zyb-list" id="purpose">
+                <li>
+                    投资
+                    <div class="h-checkbox">
+                        <input id="checkfive" type="checkbox" name=""/>
+                        <label for="checkfive"></label>
+                    </div>
+                </li>
+                <li>
+                    移居
+                    <div class="h-checkbox">
+                        <input id="checksix" type="checkbox" name=""/>
+                        <label for="checksix"></label>
+                    </div>
+                </li>
+                <li>
+                    留学
+                    <div class="h-checkbox">
+                        <input id="checkseven" type="checkbox" name=""/>
+                        <label for="checkseven"></label>
+                    </div>
+                </li>
+                <li>
+                    度假
+                   <div class="h-checkbox">
+                        <input id="checkeight" type="checkbox" name=""/>
+                        <label for="checkeight"></label>
+                    </div>
+                </li>
+            </ul>
+            
+            <h2>预算价格范围？</h2>
+            
+            <div class="h-zscope">
+                <p class="h-zprice clearfix"><span class="h-zprice-min">￥<i id="min">10</i>万</span><span class="h-zprice-max"><i id="max">1000</i>万</span></p>
+                <input type="hidden" name="" value="10" id="input_min">
+                <input type="hidden" name="" value="1000" id="input_max">
+                <div class="h-range">
+                    <div class="h-progress" id="h-progress"></div>
+                    <div class="h-range-l" id="h-range-l"></div>
+                    <div class="h-range-r" id="h-range-r"></div>
+                </div>
+            </div>
+
+            
+
+            <h2>计划置业时间：</h2>
+            <ul class="h-zyb-list">
+                <li>
+                    一个月内
+                    <div class="h-radio">
+                        <input id="radione" type="radio" name="time" value="" checked="checked"/>
+                        <label for="radione"></label>
+                    </div>
+                </li>
+                <li>
+                    1个月-3个月
+                    <div class="h-radio">
+                        <input id="radiotwo" type="radio" name="time" value=""/>
+                        <label for="radiotwo"></label>
+                    </div>
+                </li>
+                <li>
+                    3个月-半年以上
+                    <div class="h-radio">
+                        <input id="radiothree" type="radio" name="time" value="" />
+                        <label for="radiothree"></label>
+                    </div>
+                </li>
+                <li>
+                    不确定
+                    <div class="h-radio">
+                        <input id="radiofour" type="radio" name="time" value="" />
+                        <label for="radiofour"></label>
+                    </div>
+                </li>
+            </ul>
+
+            <input class="h-btngreen h-zybtn" id="sub" type="submit" name="" value="确定提交" />
+            
+        </section>
+        </form>
+    <script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+    <script src="../../thirdvendor/zepto1.0/touch.js"></script>
+    <script>
+    progress('h-range-l',event);
+    progress('h-range-r',event);
+   
+    function $id(o){return document.getElementById(o) || o;}
+    function progress(o,e){
+        $id(o).addEventListener("touchstart",function(e){
+            //手指按下。
+            var init={
+                mX : $id(o).offsetLeft,     //当前 起始 dom元素的左边 位置 0 起值
+                lX : $id('h-range-l').offsetLeft,
+                rX : $id('h-range-r').offsetLeft,
+                dX : e.targetTouches[0].pageX,  //手指按下的位置。
+            }
+
+            //手指移动
+            function fnMove(e){
+                var dist = e.changedTouches[0].pageX-init.dX,   //手指一次移动的距离
+                    len = init.mX+dist,  //总体移动的距离（即滑块走的距离，你看到的）
+                    l_x = init.lX,  
+                    r_x = init.rX;
+                    //$id(o).style.left=len+'px';
+                switch ($id(o).id){
+                    case 'h-range-l':
+                        l_x = init.lX + dist;
+                        drawMove('l');
+                        break;
+                    case 'h-range-r':
+                        r_x = init.rX + dist;
+                        drawMove('r');
+                        break;
+                    default: break;
+                }
+                 
+                function drawMove(d){
+                    if(r_x > l_x + 25 && len>=0 && len<=275 ) {
+                        $id(o).style.left=len+'px';
+                        $id('h-progress').style.left = l_x + 'px';
+                        $id('h-progress').style.width = r_x - l_x + 'px';
+                        if (d=='l') $id('min').innerHTML = Math.round(len*3.6+10);
+                        else $id('max').innerHTML = Math.round(len*3.6+10);
+                    }
+                }   
+     
+            };
+            //手指抬起
+            function fnEnd(e){
+                var endX = e.changedTouches[0].pageX;   //手指抬起，事件细节用changedTouches
+                $id('input_min').value = $id('min').innerHTML;
+                $id('input_max').value = $id('max').innerHTML;
+                //取消绑定事件。
+                document.removeEventListener("touchmove",fnMove,false);
+                document.removeEventListener("touchend",fnEnd,false);
+            };
+            //绑定事件。
+            document.addEventListener("touchmove",fnMove,false);
+            document.addEventListener("touchend",fnEnd,false);
+            //取消默认层。
+            e.preventDefault();
+        },false);
+    }
+
+    //判断复选框是否选中，未选中 提交按钮禁用
+    ;$(function(){
+        'use strict';
+        var is_submit,check,hander,init;
+        check = function(obj){
+            var n=0;
+            obj.each(function(){
+                if ($(this).prop('checked')) {
+                    n++;
+                };
+            });
+            return n>0;
+        }
+
+        hander = function(arr){
+            for(var i=0,len=arr.length;i<len;i++){
+                arr[i].click(function(){
+                    console.log($(this).prop('checked'));
+                    if(!!$(this).prop('checked')){
+                        $(this).prop('checked',true);
+                    }else{
+                        $(this).removeAttr('checked');
+                    }
+                    is_submit(arr);
+                })
+            }
+        }
+
+        is_submit = function(arr){
+            for(var i=0,len=arr.length;i<len;i++){
+                if (check(arr[i]) === false) {
+                    $('#sub').prop('disabled','disabled');
+                    // alert('请设置完整信息！');
+                    return;
+                };
+            }
+            $('#sub').removeAttr('disabled');
+        }
+
+        init = function(){
+            var arr = [$('#property input'),$('#purpose input')];
+            is_submit(arr);
+            hander(arr);
+        }
+        init();
+
+    })
+    </script>
+    </body>
+</html>

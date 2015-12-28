@@ -1,0 +1,34 @@
+.footer-h{
+	position: relative;
+	margin-top: -140px;
+	
+	clear: both;
+	background: #53555a;
+	text-align: center;
+}
+.h-footer{
+	width:590px;
+	margin: 0 auto;
+	font-size: 16px;
+	padding: 40px 0 0;
+}
+.h-footer li{
+	color: #d8d9d9;
+	padding: 0;
+}
+.h-footer a,.h-footer a:visited{
+	color: #d8d9d9;
+}
+.h-footer a{
+	padding: 0 39px;
+}
+.h-copyright{
+	font-size: 13px;
+	color: #808185;
+	padding:30px 0 26px; 
+}
+@media (min-width: 1200px) {
+    .footer-h{
+    	height: 140px;
+    }
+}

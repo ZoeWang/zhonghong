@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->  
+<head>
+    <title>HiFang | Welcome...</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../thirdvendor/bootstrap3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <!-- <link rel="stylesheet" href="../../thirdvendor/line-icons/line-icons.css"> -->
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome4.2.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../../thirdvendor/flexslider/flexslider.css">   -->
+    <!-- <link rel="stylesheet" href="../../thirdvendor/parallax-slider/css/parallax-slider.css"> -->
+
+    <!-- CSS Theme -->    
+    <!-- <link rel="stylesheet" href="../css/theme-colors/default.css"> -->
+
+    <!-- less 上线时需生成css引入并去掉less-->
+    <link rel="stylesheet/less" type="text/css" href="../less/default.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>   
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>  
+
+</head> 
+
+<body>
+<div class="wrapper">
+    <div class="h-page">
+        <div class="header-h">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo-header" src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <!-- 首页 -->
+                            <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">首页</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">首页1</a></li>
+                                    <li><a href="#">首页2</a></li>
+                                </ul>
+                            </li>
+                            <!-- /首页 -->
+                            <!-- 房源 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">房源</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">房源1</a></li>
+                                    <li><a href="#">房源2</a></li>
+                                </ul>
+                            </li>
+                            <!-- /房源 -->
+                            <!-- 投资 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">投资</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">投资</a></li>
+                                    <li><a href="#">投资</a></li>
+                                </ul>
+                            </li>
+                            <!-- /投资 -->
+                            <!-- 资讯 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">资讯</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                </ul>
+                            </li>
+                            <!-- /资讯 -->
+                            <!-- 智业宝 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">智业宝</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">智业宝</a></li>
+                                    <li><a href="#">智业宝</a></li>
+                                </ul>
+                            </li>
+                            <!-- /智业宝 -->
+                            <!-- 个人中心 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">个人中心</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">个人中心</a></li>
+                                    <li><a href="#">个人中心</a></li>
+                                </ul>
+                            </li>
+                            <!-- /个人中心 -->
+                        </ul>
+                    </div>
+
+                    <!-- login reg -->
+                    <div class="h-loginbar pull-right">
+                        <a href="#" id='hlogin'>登录</a> | <a href="#">注册</a>
+                    </div>
+
+                </div>  
+            </div>
+        </div><!--/header-h-->
+
+        <!--h-content-->
+        <div class="container">
+            <div class="tab-v1 h-house-tab">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">自住房</a></li>
+                    <li class=""><a href="#">学区房</a></li>
+                    <li class=""><a href="#">移民房</a></li>
+                    <li class=""><a href="#">投资房</a></li>
+                    <li class=""><a href="#">包租房</a></li>
+                    <li class=""><a href="#">度假房</a></li>
+                </ul>                
+            </div>
+            <ul class="h-breadcrumb">
+                <li><a href="index.html">首页</a> ></li>
+                <li><a href="#">房源</a> ></li>
+                <li class="active">自住房</li>
+            </ul><!-- breadcrumb/ -->
+            <div class="h-house-choose-wrap">
+                <div class="h-house-choose">
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">国家：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >澳大利亚</a></li>
+                                <li><a href="" >美国</a></li>
+                                <li><a href="" >加拿大</a></li>
+                                <li><a href="" >马来西亚</a></li>
+                                <li><a href="" >拉脱维亚</a></li>
+                                <li><a href="" >塞浦路斯</a></li>
+                                 <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >澳大利亚</a></li>
+                                <li><a href="" >美国</a></li>
+                                <li><a href="" >加拿大</a></li>
+                                <li><a href="" >马来西亚</a></li>
+                                <li><a href="" >拉脱维亚</a></li>
+                                <li><a href="" >塞浦路斯</a></li>
+                                 <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >澳大利亚</a></li>
+                                <li><a href="" >美国</a></li>
+                                <li><a href="" >加拿大</a></li>
+                                <li><a href="" >马来西亚</a></li>
+                                <li><a href="" >拉脱维亚</a></li>
+                                <li><a href="" >塞浦路斯</a></li>
+                            </ul>
+                        </dd>
+                        <!-- <dd class="h-house-choose-more">更多国家<i class="fa fa-angle-down"></i></dd> -->
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">州省：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >新南威尔士州</a></li>
+                                <li><a href="" >维多利亚州</a></li>
+                                <li><a href="" >昆士兰州</a></li>
+                                <li><a href="" >北领地</a></li>
+                                <li><a href="" >南澳州</a></li>
+                                <li><a href="" >死澳洲</a></li>
+                                <li><a href="" >塔斯马尼亚州</a></li>          
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">城市：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >悉尼</a></li>
+                                <li><a href="" >纽卡斯尔</a></li>
+                                <li><a href="" >堪培拉</a></li>
+                                <li><a href="" >卧龙岗</a></li>
+
+                            </ul>
+                            <!-- / -->
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">建筑面积：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >50平米以下</a></li>
+                                <li><a href="" >50-100平米</a></li>
+                                <li><a href="" >100-200平米</a></li>
+                                <li><a href="" >200-500平米</a></li>
+                                <li><a href="" >500-1000平米</a></li>
+                                <li><a href="" >50-100平米</a></li>
+                                <li><a href="" >100-200平米</a></li>
+                                <li><a href="" >200-500平米</a></li>
+                                <li><a href="" >500-1000平米</a></li><li><a href="" >50-100平米</a></li>
+                                <li><a href="" >100-200平米</a></li>
+                                <li><a href="" >200-500平米</a></li>
+                                <li><a href="" >500-1000平米</a></li>
+                                <li><a href="" >1000平米以上</a></li>
+                            </ul>
+                            <!-- / -->
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl h-house-choose-dl2">
+                        <dt class="h-house-choose-dt">价位：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >100万以下</a></li>
+                                <li><a href="" >100-200万</a></li>
+                                <li><a href="" >200-500万</a></li>
+                                <li><a href="" >500-1000万</a></li>
+                                <li><a href="" >1000-5000万</a></li>
+                                <li><a href="" >5000万以上</a></li>
+                            </ul>
+                        </dd>
+                        <dd class="h-house-choose-price">
+                            <span>￥</span>
+                            <input type="text">
+                            <span>-</span>
+                            <input type="text">
+                            <span>万</span>
+                            <input type="button" value="提交" class="h-house-choose-button">
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">物业类型：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >独栋别墅</a></li>
+                                <li><a href="" >联排别墅</a></li>
+                                <li><a href="" >普通公寓</a></li>
+                                <li><a href="" >公管公寓</a></li>
+                                <li><a href="" >小型公寓</a></li>
+                                <li><a href="" >商业用房</a></li>
+                                <li><a href="" >农场</a></li>
+                                <li><a href="" >空地</a></li>
+                                <li><a href="" >其他</a></li>
+                            </ul>
+                            <!-- / -->
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">卧室数：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >1+</a></li>
+                                <li><a href="" >2+</a></li>
+                                <li><a href="" >3+</a></li>
+                                <li><a href="" >4+</a></li>
+                                <li><a href="" >5+</a></li>
+                                <li><a href="" >6+</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">浴室数：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >1+</a></li>
+                                <li><a href="" >2+</a></li>
+                                <li><a href="" >3+</a></li>
+                                <li><a href="" >4+</a></li>
+                                <li><a href="" >5+</a></li>
+                                <li><a href="" >6+</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">项目类型：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >新房</a></li>
+                                <li><a href="" >二手房</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">更多类型：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul">
+                                <li><a href="" class="blue">不限</a></li>
+                                <li><a href="" >装修情况</a></li>
+                                <li><a href="" >具体情况</a></li>
+                                <li><a href="" >车位</a></li>
+                            </ul>
+                            <!-- / -->
+                        </dd>
+                    </dl>
+                </div>
+                <span class="h-house-choose-hidden">收起</span><!-- h-choose 条件筛选/ -->
+                <div class="h-house-choosed">
+                    <dl class="h-house-choose-dl">
+                        <dt class="h-house-choose-dt">您已选择：</dt>
+                        <dd class="h-house-choose-dd">
+                            <ul class="h-house-choose-ul h-house-choosed-ul">
+                                <li><span>国家：</span><a href="" class="blue">澳大利亚</a> <span class="h-icon-x"> x</span></li>
+                                <li><span>城市：</span><a href="#" class="blue">悉尼</a> <span class="h-icon-x"> x</span></li>
+                                <li><span>建筑面积：</span><a href="#" class="blue">50平米以下</a> <span class="h-icon-x"> x</span></li>
+                            </ul>
+                            <span  class="h-house-choose-clear">清空选项</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="h-house-list-one">
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-responsive sm-margin-bottom-20" data-src="holder.js/100%x200/sky" alt="">
+                    </a>
+                </div> 
+                <div class="col-sm-8 product-description">
+                    <div class="overflow-h margin-bottom-5">
+                        <ul class="list-inline overflow-h h-house-list-ul">
+                            <li><h3 class="title-price"><a href="#">澳大利亚山顶别墅</a></h3></li>
+                            <li class="pull-right">
+                                <ul class="list-inline product-ratings h-house-list-icon">
+                                    <li class="h-heart-red"><i class="rating-selected fa fa-heart"></i></li>
+                                    <li><i class="glyphicon glyphicon-share"></i></li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">300-400平方米</span>
+                            <span class="title-price margin-right-10">二手房</span>
+                            <span class="title-price line-through">在售</span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">美国</span>
+                            <span class="title-price margin-right-10">旧金山</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price line-through">Poplar Ave Ross, CA 94957  </span>
+                        </div> 
+                                   
+                        <p class="margin-bottom-20 h-house-list-p">普罗旺斯的化身！从定制的大铁门进入，四面石墙围着郁郁葱葱的一大片空地，绝对惊艳！主屋大约300平米，独立出租单元和客房大约200平米。主屋有华丽的客厅，配有壁炉，音乐室，阳光门廊/办公区，家庭房毗邻厨房。4个卧室在二层，客房也很棒！大量法式进口家具，可提供详单。</p>
+                        <div class="h-house-btn">
+                            <span class="h-house-list-money">约￥200万</span><span>USD 404,950</span>
+                            <button type="button" class="btn-u btn-u-blue">我要预订</button>
+                            <button type="button" class="btn-u btn-u-green margin-right-10">资讯详情</button>
+                        </div><!-- / -->
+                        
+                    </div>    
+                </div>
+            </div>
+            <div class="h-house-list-one">
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-responsive sm-margin-bottom-20" data-src="holder.js/100%x200/sky" alt="">
+                    </a>
+                </div> 
+                <div class="col-sm-8 product-description">
+                    <div class="overflow-h margin-bottom-5">
+                        <ul class="list-inline overflow-h h-house-list-ul">
+                            <li><h3 class="title-price"><a href="#">澳大利亚山顶别墅</a></h3></li>
+                            <li class="pull-right">
+                                <ul class="list-inline product-ratings h-house-list-icon">
+                                    <li><i class="rating-selected fa fa-heart"></i></li>
+                                    <li><i class="glyphicon glyphicon-share"></i></li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">300-400平方米</span>
+                            <span class="title-price margin-right-10">二手房</span>
+                            <span class="title-price line-through">在售</span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">美国</span>
+                            <span class="title-price margin-right-10">旧金山</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price line-through">Poplar Ave Ross, CA 94957  </span>
+                        </div> 
+                                   
+                        <p class="margin-bottom-20 h-house-list-p">普罗旺斯的化身！从定制的大铁门进入，四面石墙围着郁郁葱葱的一大片空地，绝对惊艳！主屋大约300平米，独立出租单元和客房大约200平米。主屋有华丽的客厅，配有壁炉，音乐室，阳光门廊/办公区，家庭房毗邻厨房。4个卧室在二层，客房也很棒！大量法式进口家具，可提供详单。</p>
+                        <div class="h-house-btn">
+                            <span class="h-house-list-money">约￥200万</span><span>USD 404,950</span>
+                            <button type="button" class="btn-u btn-u-blue">我要预订</button>
+                            <button type="button" class="btn-u btn-u-green margin-right-10">资讯详情</button>
+                        </div><!-- / -->
+                        
+                    </div>    
+                </div>
+            </div>
+            <div class="h-house-list-one">
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-responsive sm-margin-bottom-20" data-src="holder.js/100%x200/sky"  alt="">
+                    </a>
+                </div> 
+                <div class="col-sm-8 product-description">
+                    <div class="overflow-h margin-bottom-5">
+                        <ul class="list-inline overflow-h h-house-list-ul">
+                            <li><h3 class="title-price"><a href="#">澳大利亚山顶别墅</a></h3></li>
+                            <li class="pull-right">
+                                <ul class="list-inline product-ratings h-house-list-icon">
+                                    <li><i class="rating-selected fa fa-heart"></i></li>
+                                    <li><i class="glyphicon glyphicon-share"></i></li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">300-400平方米</span>
+                            <span class="title-price margin-right-10">二手房</span>
+                            <span class="title-price line-through">在售</span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">美国</span>
+                            <span class="title-price margin-right-10">旧金山</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price line-through">Poplar Ave Ross, CA 94957  </span>
+                        </div> 
+                                   
+                        <p class="margin-bottom-20 h-house-list-p">普罗旺斯的化身！从定制的大铁门进入，四面石墙围着郁郁葱葱的一大片空地，绝对惊艳！主屋大约300平米，独立出租单元和客房大约200平米。主屋有华丽的客厅，配有壁炉，音乐室，阳光门廊/办公区，家庭房毗邻厨房。4个卧室在二层，客房也很棒！大量法式进口家具，可提供详单。</p>
+                        <div class="h-house-btn">
+                            <span class="h-house-list-money">约￥200万</span><span>USD 404,950</span>
+                            <button type="button" class="btn-u btn-u-blue">我要预订</button>
+                            <button type="button" class="btn-u btn-u-green margin-right-10">资讯详情</button>
+                        </div><!-- / -->
+                        
+                    </div>    
+                </div>
+            </div>
+            <div class="h-house-list-one">
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-responsive sm-margin-bottom-20" data-src="holder.js/100%x200/sky" alt="">
+                    </a>
+                </div> 
+                <div class="col-sm-8 product-description">
+                    <div class="overflow-h margin-bottom-5">
+                        <ul class="list-inline overflow-h h-house-list-ul">
+                            <li><h3 class="title-price"><a href="#">澳大利亚山顶别墅</a></h3></li>
+                            <li class="pull-right">
+                                <ul class="list-inline product-ratings h-house-list-icon">
+                                    <li><i class="rating-selected fa fa-heart"></i></li>
+                                    <li><i class="glyphicon glyphicon-share"></i></li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">300-400平方米</span>
+                            <span class="title-price margin-right-10">二手房</span>
+                            <span class="title-price line-through">在售</span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">美国</span>
+                            <span class="title-price margin-right-10">旧金山</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price line-through">Poplar Ave Ross, CA 94957  </span>
+                        </div> 
+                                   
+                        <p class="margin-bottom-20 h-house-list-p">普罗旺斯的化身！从定制的大铁门进入，四面石墙围着郁郁葱葱的一大片空地，绝对惊艳！主屋大约300平米，独立出租单元和客房大约200平米。主屋有华丽的客厅，配有壁炉，音乐室，阳光门廊/办公区，家庭房毗邻厨房。4个卧室在二层，客房也很棒！大量法式进口家具，可提供详单。</p>
+                        <div class="h-house-btn">
+                            <span class="h-house-list-money">约￥200万</span><span>USD 404,950</span>
+                            <button type="button" class="btn-u btn-u-blue">我要预订</button>
+                            <button type="button" class="btn-u btn-u-green margin-right-10">资讯详情</button>
+                        </div><!-- / -->
+                        
+                    </div>    
+                </div>
+            </div>
+            <div class="h-house-list-one">
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-responsive sm-margin-bottom-20" data-src="holder.js/100%x200" alt="">
+                    </a>
+                </div> 
+                <div class="col-sm-8 product-description">
+                    <div class="overflow-h margin-bottom-5">
+                        <ul class="list-inline overflow-h h-house-list-ul">
+                            <li><h3 class="title-price"><a href="#">澳大利亚山顶别墅</a></h3></li>
+                            <li class="pull-right">
+                                <ul class="list-inline product-ratings h-house-list-icon">
+                                    <li><i class="rating-selected fa fa-heart"></i></li>
+                                    <li><i class="glyphicon glyphicon-share"></i></li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">300-400平方米</span>
+                            <span class="title-price margin-right-10">二手房</span>
+                            <span class="title-price line-through">在售</span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="title-price margin-right-10">美国</span>
+                            <span class="title-price margin-right-10">旧金山</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price margin-right-10">罗斯</span>
+                            <span class="title-price line-through">Poplar Ave Ross, CA 94957  </span>
+                        </div> 
+                                   
+                        <p class="margin-bottom-20 h-house-list-p">普罗旺斯的化身！从定制的大铁门进入，四面石墙围着郁郁葱葱的一大片空地，绝对惊艳！主屋大约300平米，独立出租单元和客房大约200平米。主屋有华丽的客厅，配有壁炉，音乐室，阳光门廊/办公区，家庭房毗邻厨房。4个卧室在二层，客房也很棒！大量法式进口家具，可提供详单。</p>
+                        <div class="h-house-btn">
+                            <span class="h-house-list-money">约￥200万</span><span>USD 404,950</span>
+                            <button type="button" class="btn-u btn-u-blue">我要预订</button>
+                            <button type="button" class="btn-u btn-u-green margin-right-10">资讯详情</button>
+                        </div><!-- / -->
+                        
+                    </div>    
+                </div>
+            </div>
+            <div class="text-center">
+                    <ul class="pagination h-house-page">
+                        <li class="h-page-all">共7页</li>
+                        <li class="h-pag-grey">首页</li>
+                        <li class="h-pag-grey"><上一页</li>
+                        <li class="active">1</li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...7</a></li>
+                        <li><a href="#">下一页></a></li>
+                    </ul>                                                            
+                </div><!-- / -->
+        </div><!--/h-content-->
+        
+    </div><!-- /h-page -->
+</div><!--/wrapper-->
+
+<div class="footer-h">
+    <div class="container">
+        <ul class="list-unstyled h-footer clearfix">
+            <li class="col-xs-3"><a href="">触屏版</a>|</li>
+            <li class="col-xs-3"><a href="">关于我们</a>|</li>
+            <li class="col-xs-3"><a href="">服务声明</a>|</li>
+            <li class="col-xs-3"><a href="">联系我们</a></li>
+        </ul>
+        <div class="h-copyright col-sm-12">Copyright © 2014 JKHW.com. All Rights Reserved. 北京中弘网络营销顾问有限公司 </div>
+    </div>
+</div><!-- /footer-h -->
+<div class="h-loginwrap">
+    <div class="h-opacity"></div>
+    <div class="h-loginbox h-detail-consult">
+        <h4>欢迎登录即刻海外</h4>
+        <form action="" method="get" accept-charset="utf-8" class="h-detail-telform">
+            <input type="text" placeholder="账号/邮箱">
+            <span class="errTip">邮箱格式不正确</span>
+            <input type="text" placeholder="密码">
+            <span class="errTip"></span>
+            <div class="alert alert-danger fade in" style="diaplay:block;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Oh snap!</strong> Change a few things up and <a class="alert-link" href="#">try submitting again.</a>
+            </div>
+            <p class="h-login-siginp h-login-siginp2"><input type="checkbox" name="checkbox" class="h-detail-checkbox">记住用户名<a href="#" class="h-login-sigina h-login-sigina2">忘记密码</a></p> 
+            <input type="submit" value="登录" class="h-detail-telnum">
+            <p class="h-login-siginp">还没有账号？ <a href="#" class="h-login-sigina">免费注册</a></p> 
+        </form>
+    </div>
+</div>
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/bootstrap3.2/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<!-- <script type="text/javascript" src="../../thirdvendor/back-to-top.js"></script>
+<script type="text/javascript" src="../../thirdvendor/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="../../thirdvendor/parallax-slider/js/jquery.cslider.js"></script>-->
+<!-- JS Customization -->
+<!-- <script type="text/javascript" src="../js/custom.js"></script> -->
+<!-- JS Page Level -->           
+<!-- <script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/plugins/parallax-slider.js"></script> -->
+<script type="text/javascript">
+    
+    $(function(){
+        // 当内容过多，显示更多
+        $('.h-house-choose-dd').each(function(){
+            var ddHeight=$(this).height()
+            if(ddHeight>40){
+                $(this).addClass('h-house-choose-height');
+                $(this).parent().append('<dd class="h-house-choose-more">更多<i class="fa fa-angle-down"></i></dd>');
+            }
+        })
+        // 点击更多展开隐藏
+        var ok=true;
+        $('.h-house-choose-more').on('click',function(){
+            var ddChange=$(this).parent().find('.h-house-choose-dd')
+            if(ok){
+                ddChange.removeClass('h-house-choose-height');
+                ok=false;  
+            }
+            else{
+                ddChange.addClass('h-house-choose-height');
+                ok=true;
+            }
+        })
+    })
+
+    $('#hlogin').on('click',function(){
+        $('.h-loginwrap').css('display','block');
+        var bodyHeight= document.body.scrollHeight ;
+        $('.h-opacity').css('height',bodyHeight);
+
+    })
+    $('.h-opacity').on('click',function(){
+        $('.h-loginwrap').css('display','none');
+    })
+
+    
+</script>
+<!--[if lt IE 9]>
+    <script src="../../thirdvendor/respond.js"></script>
+    <script src="../../thirdvendor/html5shiv.js"></script>
+    <script src="../js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>

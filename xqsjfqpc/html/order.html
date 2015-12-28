@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->  
+<head>
+    <title>新奇世界 | 支付订单</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../thirdvendor/bootstrap3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../thirdvendor/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome4.2.0/css/font-awesome.min.css">
+
+    <!-- less 上线时需生成css引入并去掉less-->
+    <link rel="stylesheet/less" type="text/css" href="../less/default.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>  
+
+</head>	
+
+<body>
+<div class="wrapper">
+    <div class="x-page">
+        <!-- topbar -->
+        <div class="top-x">
+            <ul class="list-unstyled container clearfix">
+                <li class="col-sm-8 pd-l0"><a href="">收藏新奇世界</a></li>
+                <li class="col-sm-4 pd-r0">
+                    <span>小苹果,<a href="">退出</a></span>
+                    <span class="hidden-xs hidden-sm hidden-md">系统消息（<a href="">66</a>）</span>
+                    <i class="hidden-xs hidden-sm hidden-md">手机逛新奇世界</i>
+                </li>
+            </ul>
+        </div>
+        <div class="header-x">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo-header" src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <!-- 首页 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">首页</a>
+                               
+                            </li>
+                            <!-- /首页 -->
+                            <!-- 众筹 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">众筹</a>
+                                
+                            </li>
+                            <!-- /众筹 -->
+                            <!-- 分权 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">分权</a>
+                                <ul class="dropdown-menu clearfix">
+                                    
+                                    <li><a href="#">分权首页</a></li>
+                                    <li class="active"><a href="#">分权项目</a></li>
+                                    <li><a href="#">分权流程</a></li>
+                                </ul>
+                            </li>
+                            <!-- /分权 -->
+                            
+                            <!-- 个人中心 -->
+                            <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">个人中心</a>
+                                
+                            </li>
+                            <!-- /个人中心 -->
+                        </ul>
+                    </div>
+
+                   
+
+                </div>  
+            </div>
+        </div><!-- /x-header -->
+
+        <section>
+            <div class="x-sec-line">
+                <div class="container clearfix">
+                    <span class="purple"></span>
+                    <span class="pink"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                    <span class="blue1"></span>
+                </div>  
+            </div>
+            <!-- container -->
+            <div class="container">
+                <!-- breadcrumb -->
+                <ul class="x-breadcrumb">
+                    <li><a href="#">首页</a> &gt;</li>
+                    <li><a href="#">分权</a> &gt;</li>
+                    <li><a href="#">项目</a> &gt;</li>
+                    <li><a href="#">鹿港小镇 别院A型</a> &gt;</li>
+                    <li class="active">项目认购</li>
+                </ul>
+                
+                <!-- 支付步骤 -->
+                <ul class="tab-order list-unstyled clearfix" id="tab">
+                    <li><a href="">1、填写认购信息</a></li>
+                    <li class="active"><a href="">2、支付订单</a></li>
+                    <li><a href="">3、认购完成</a></li>
+                </ul>
+
+                <div id="panel">
+                    <!-- 1 -->
+                    <div class="hide"></div>
+                    <!-- 2 -->
+                    <div class="show">
+                        <div class="x-pay-order">
+                            <!-- 支付时间 -->
+                            <ul class="datetime list-unstyled clearfix">
+                                <li class="col-sm-6 pd-l0"><strong>您的认购份额已锁定，请在<span class="red1">60分钟</span>内完成付款。</strong></li>
+                                <li class="col-sm-6 pd-r0">支付剩余时间<span class="red1">54分钟30秒</span></li>
+                            </ul>
+                            
+                            <!-- 订单号 -->
+                            <p class="order-Id"><span class="ID">订单号：XQSJZC-20150115113021001</span> 支付金额：<span class="red1">￥54,,800</span> 元</p>
+                            <div class="order-tab-box">
+                                <a class="back" href="">返回修改</a>
+                                <ul class="order-table list-unstyled">
+                                    <li>
+                                        <span>项目名称：鹿港小郑 别院A型</span>
+                                        <span>认购份数：1</span>
+                                        <span>认购金额：￥56,800元</span>
+                                    </li>
+                                    <li>
+                                        <span>认 购 人：李孝利</span>
+                                        <span>身份证号：15018274657412737</span>
+                                        <span>手机号码：15932383457</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 支付方式 -->
+                            <div class="x-pay-type">
+                                <h3 class="tit">选择支付方式</h3>
+                                <ul class="type-box list-unstyled">
+                                    <li class="type active">
+                                        <dl class="clearfix">
+                                            <dt class="col-md-6 pd-l0">
+                                                <input type="radio" name="type" checked="checked"> 
+                                                <span class="fs16">第三方支付方式</span>
+                                            </dt>
+                                            <dd class="col-md-6  pd-r0">推荐微信等第三方支付的平台用户使用</dd>
+                                        </dl>
+                                        <ul class="hide-cont list-unstyled">
+                                            <li>
+                                                <input type="radio" name="crad" checked="checked">
+                                                <img src="../img/zfb.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="crad">
+                                                <img src="../img/zfbsm.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="crad">
+                                                <img src="../img/wx.jpg" alt="">
+                                                <span class="fs13">跳转后，请使用微信扫描二维码完成支付</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="type">
+                                        <dl class="clearfix">
+                                            <dt class="col-md-6 pd-l0">
+                                                <input type="radio" name="type"> 
+                                                <span class="fs16">网上银行支付</span>
+                                                <span>支持储蓄卡和信用卡</span>
+                                            </dt>
+                                            <dd class="col-md-6 pd-r0">推荐开通网上银行的用户使用</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="type">
+                                        <dl class="clearfix">
+                                            <dt class="col-md-6 pd-l0">
+                                                <input type="radio" name="type"> 
+                                                <span class="fs16">银行卡直接支付</span>
+                                            </dt>
+                                            <dd class="col-md-6 pd-r0">无需开通网上银行，支持快捷付款</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="mg-t25"><input class="btn-red1" type="submit" value="立即付款"/></li>
+                                </ul>
+                            </div>
+
+                        </div><!-- /支付订单 -->
+                    </div>
+                    <!-- 3 -->
+                    <div class="hide"></div>
+                </div>
+            </div><!-- /container -->
+            
+        </section>
+    </div><!-- /x-page -->
+</div><!--/wrapper-->
+
+<div class="footer-x">
+    <div class="container">
+        <ul class="list-unstyled x-footer clearfix">
+            <li class="col-xs-3"><a href="">触屏版</a>|</li>
+            <li class="col-xs-3"><a href="">关于我们</a>|</li>
+            <li class="col-xs-3"><a href="">服务声明</a>|</li>
+            <li class="col-xs-3"><a href="">联系我们</a></li>
+        </ul>
+        <div class="x-copyright col-sm-12">Copyright © 2014 JKHW.com. All Rights Reserved. 北京中弘网络营销顾问有限公司 </div>
+    </div>
+</div><!-- /footer-h -->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/bootstrap3.2/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+});
+
+</script>
+<!--[if lt IE 9]>
+    <script src="../../thirdvendor/respond.js"></script>
+    <script src="../../thirdvendor/html5shiv.js"></script>
+<![endif]-->
+
+</body>
+</html>

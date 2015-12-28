@@ -1,0 +1,71 @@
+/*****font-size******/
+.fs12{
+	font-size:12px;
+}
+.fs13(){
+	font-size:13px;
+}
+
+
+/************color****************/
+@white:#fff;
+@greyf2:#f2f2f2;
+@greyf8:#f8f8f8;
+@greyc7:#c7c7c7;
+@greyd8:#d8d8d8;
+@greya2:#a2a2a2;
+@gery48:#484848;
+@grey88:#888;
+@grey33:#333;
+@orange1:#FFA023;
+@orange2:#fe6922;
+@blue1:#1B74D7;
+@blue2:#0955ad;
+@red1:#fe3c3a;
+
+
+/*******截取字符多余 ...*********/
+
+.textell(){
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/*******img路径******/
+@img: "../img";
+
+/*****show hide********/
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+/*********float************/
+.x-fl{
+	float:left;
+}
+.x-fr{
+	float:right;
+}
+/**********disabled**********/
+input[type="submit"][disabled]{
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+/**********提示**********/
+.errTip{
+	display:block;
+	color:#C26542;
+	font-size:12px;
+}
+.alert{
+	margin-top:10px;
+}
+/**********定义边框**********/
+.noborder{
+	border:none !important;
+}
+

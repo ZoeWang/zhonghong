@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <title>房产详情</title>
+    <meta name="author" content="Hifang.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--  网站开启对 web app 程序的支持 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- 指定的iphone中safari顶端的状态条的样式 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-itunes-app" content="app-id=432274380" /><!--  iPhone显示下载AppStore的banner -->
+    <meta http-equiv="Expires" CONTENT="-1">   <!--  网页在任何时候都不能被Cache存储        -->
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">           
+    <meta http-equiv="Pragma" CONTENT="no-cache">  
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome/font-awesome.css">
+    <!-- <link rel="stylesheet" href="../css/app.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="../less/app.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>    
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #333;
+			overflow: hidden;
+		}
+		/*ul wrapper*/
+		#iSlider-wrapper {
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			position: absolute;
+		}
+
+		#iSlider-wrapper ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		#iSlider-wrapper li {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-pack: center;
+			-webkit-box-align: center;
+			list-style: none;
+		}
+		#iSlider-wrapper li  img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		#iSlider-wrapper .icon-remove-sign{
+			position: absolute;
+			top:20px;
+			right:20px;
+			z-index: 1;
+			font-size: 3rem;
+			color:#fff;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- Outer Canvas 外层画布 -->
+	<div id="iSlider-wrapper">
+		<a href="javascript:history.go(-1);" class="icon-remove-sign" id="back"></a>
+	</div>
+	<script src="../../thirdvendor/iSlider/iSlider.js"></script>
+	<script src="../../thirdvendor/zepto1.0/zepto.js"></script>
+	<script src="../../thirdvendor/zepto1.0/touch.js"></script>
+	<script>
+		var list = [
+			{
+				height: 414,
+				width: 320,
+				content: "../images/in1.png",
+			},{
+				height: 414,
+				width: 320,
+				content: "../images/in1.png",
+			},{
+			 	height: 414,
+				width: 320,
+			 	content: "../images/in1.png",
+			},{
+				height: 414,
+				width: 320,
+				content:"../images/in1.png"
+			},{
+				height: 414,
+				width: 320,
+				content:"../images/in2.png"
+			},{
+				height: 414,
+				width: 320,
+				content:"../images/in2.png"
+			},{
+				height: 414,
+				width: 320,
+				content:"../images/in2.png"
+			},{
+				height: 414,
+				width: 320,
+				content:"../images/in2.png"
+			},
+			{
+				height: 414,
+				width: 320,
+				content:"../images/in2.png"
+			},
+			];
+				
+		var	islider = new iSlider({
+			type: 'pic',
+		    data: list,
+		    dom: document.getElementById("iSlider-wrapper"),
+		    isLooping: true,
+		    animateType: 'depth',
+		});
+
+		$('#back').on('tap', function(){
+          window.history.back(-1);  
+        })
+
+	</script>
+</body>
+</html>

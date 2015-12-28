@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->  
+<head>
+    <title>HiFang | 智业宝-账户设置</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../thirdvendor/bootstrap3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../thirdvendor/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../../thirdvendor/font-awesome4.2.0/css/font-awesome.min.css">
+
+    <!-- CSS Theme -->    
+    <!-- <link rel="stylesheet" href="../css/theme-colors/default.css"> -->
+
+    <!-- less 上线时需生成css引入并去掉less-->
+    <link rel="stylesheet/less" type="text/css" href="../less/default.less">
+    <script src="../../thirdvendor/less/less-1.7.4.min.js"></script>   
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- holder.js 图片站位 可去掉-->
+    <script src="../../thirdvendor/holder/holder.min.js"></script>  
+
+</head> 
+
+<body>
+<div class="wrapper">
+    <div class="h-page">
+        <div class="header-h">
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo-header" src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <!-- 个人中心 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle h-person-self" data-toggle="dropdown">个人中心</a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">个人中心</a></li>
+                                    <li><a href="#">个人中心</a></li>
+                                </ul>
+                            </li>
+                            <!-- /个人中心 -->
+                        </ul>
+                    </div>
+
+                    <!-- login reg -->
+                    <div class="h-loginbar pull-right">
+                        <!-- <a href="#">登录</a> | <a href="#">注册</a> -->
+                        <a href="#">账户设置 </a> | <a href="#"> 系统设置</a>
+                    </div>
+
+                </div>  
+            </div>
+        </div><!--/header-h-->
+
+        <!-- account -->
+        <div class="container h-account">
+            <h1 class="caption">账户设置</h1>
+            <div class="h-account-tab tab-v5">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#person" data-toggle="tab"></i>个人资料</a></li>
+                        <li><a href="#safe" data-toggle="tab">账号安全</a></li>
+                        <li><a href="#binding" data-toggle="tab">账号绑定</a></li>
+                    </ul>                
+                    <div class="tab-content">
+                        <!-- 个人资料 -->
+                        <div class="tab-pane fade in active person" id="person">
+                            <form action="" class="">
+                            <ul class="list-unstyled p-list">
+                                <li class="clearfix headpic">
+                                    <label for="" class="col-sm-2 tit"><i>&nbsp;</i>头像</label>
+                                    <div class="h-input col-sm-4 clearfix">
+                                        <img src="" data-src="holder.js/90x90/sky" width="90px" height="90px" alt="">
+                                        <div class="maskhead"></div>
+                                        <button class="btn-u btn-brd pull-right">本地照片</button>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        <i class="red">*</i>昵称
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input type="text" name="" placeholder="" value="小苹果">
+                                    </div>
+
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        <i class="red">*</i>姓名
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input type="text" name="" placeholder="" value="道德">
+                                    </div>
+                                    <div class="col-sm-6 msg">请填写您的姓名以便领取佣金</div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        <i>&nbsp;</i>性别
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input type="radio" name="sex" checked="checked"> 男
+                                        <input type="radio" name="sex"> 女
+                                    </div>
+                                    
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        <i class="red">*</i>身份证
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input class="err" type="text" name="" placeholder="" value="25462222222111333">
+                                    </div>
+                                    <div class="col-sm-6 msg">请填写您的省份证号以便领取佣金</div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                        <i class="red">*</i>我的地址
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input type="text" name="" placeholder="" value="东区国际">
+                                    </div>
+                                    <div class="col-sm-6 msg">请填写您的收货地址以便领取佣金</div>
+                                </li>
+                                <li class="clearfix">
+                                    <label for="" class="col-sm-2">
+                                    </label>
+                                    <div class="h-input col-sm-4">
+                                        <input class="btn-u" type="submit" name="" value="保存">
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                            </form>
+                        </div><!-- /个人资料 -->
+                        <!-- 账号安全 -->
+                        <div class="tab-pane fade in safe" id="safe">
+                            <div class="safe-list">
+                                <ul class="list-unstyled clearfix">
+                                    <li class="col-f">手机:</li>
+                                    <li class="col-sm-5">186****1341 <span class="blue">已验证<i class="fa fa-check"></i></span></li>
+                                    <li class="col-sm-7">&nbsp;</li>
+                                    <li class="col-l"><a class="green" href="#">更换</a></li>
+                                </ul>
+                                <ul class="list-unstyled clearfix">
+                                    <li class="col-f">邮箱:</li>
+                                    <li class="col-sm-5">happy@163.com <span class="grey1">未验证[<span class="green">马上验证</span>]</span></li>
+                                    <li class="col-sm-7">验证邮箱地址后，您即可使用邮箱登录、找回密码、订阅房产信息等。</li>
+                                    <li class="col-l green"><a class="green" href="#">更换</a></li>
+                                </ul>
+                                <ul class="list-unstyled clearfix">
+                                    <li class="col-f">登录密码:</li>
+                                    <li class="col-sm-5">********   <span class="orange">  安全性：高</span></li>
+                                    <li class="col-sm-7">安全性高的密码可以使账号更安全。建议您定期更换密码，且设置一个包含数字和字母，并长度超过6位以上的密码。</li>
+                                    <li class="col-l green"><a class="green" href="#">更换</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div><!-- /账号安全 -->
+                        <!-- 账号绑定 -->
+                        <div class="tab-pane fade in binding" id="binding">
+                           
+                        </div><!-- /账号绑定 -->
+                        
+                    </div><!-- /tab-content -->
+
+            </div><!-- /col-sm-8 -->
+        </div><!-- /account -->
+        
+        
+    </div><!-- /h-page -->
+</div><!--/wrapper-->
+
+<div class="footer-h">
+    <div class="container">
+        <ul class="list-unstyled h-footer clearfix">
+            <li class="col-xs-3"><a href="">触屏版</a>|</li>
+            <li class="col-xs-3"><a href="">关于我们</a>|</li>
+            <li class="col-xs-3"><a href="">服务声明</a>|</li>
+            <li class="col-xs-3"><a href="">联系我们</a></li>
+        </ul>
+        <div class="h-copyright col-sm-12">Copyright © 2014 JKHW.com. All Rights Reserved. 北京中弘网络营销顾问有限公司 </div>
+    </div>
+</div><!-- /footer-h -->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../../thirdvendor/bootstrap3.2/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+
+<!-- JS Customization -->
+<script>
+    jQuery(document).ready(function() {
+        
+    });
+</script>
+
+<!--[if lt IE 9]>
+    <script src="../../thirdvendor/respond.js"></script>
+    <script src="../../thirdvendor/html5shiv.js"></script>
+    <script src="../js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>
